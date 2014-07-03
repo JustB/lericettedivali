@@ -1,0 +1,2 @@
+23:22:54: C:\wamp\www\cookingpress\wp-content\themes\cookingpress\languages\pl_PL.po:93: a format specification for argument 1, as in 'msgstr', doesn't exist in 'msgid'
+23:22:54: msgfmt: found 1 fatal error

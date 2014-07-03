@@ -1,0 +1,4081 @@
+/*
+	Theme Name: CookingPress
+        Description:            WordPress Theme for Foodies
+        Version:		1.3
+        Author:			purethemes
+	Theme URI: http://themeforest.net/item/cookingpress-recipe-food-wordpress-theme/1718890
+	Author URI: http://themeforest.net/user/purethemes/portfolio
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@font-face {
+    font-family: 'HaloHandletterRegular';
+    src: url('fonts/halohandletter-webfont.eot');
+    src: url('fonts/halohandletter-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/halohandletter-webfont.woff') format('woff'),
+    url('fonts/halohandletter-webfont.ttf') format('truetype'),
+    url('fonts/halohandletter-webfont.svg#HaloHandletterRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    margin:0px auto;
+    background-color: #E8E8E8;
+    color: rgb(60,60,60);
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+/*
+    General
+*/
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif; 
+    font-weight: normal
+}
+a, a:visited {
+    color:#000
+}
+a:hover {
+    color:#777
+}
+.container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 1030px;
+    padding: 10px 0px 0px;
+}
+
+.rightsb #primary {
+    float:right
+}
+.rightsb #content {
+    float:left;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+.rightsb #sidebar {
+    margin:0px 0px 30px 30px;
+}
+.rightsb #nav ul {
+
+    padding: 3px
+}
+.rightsb h3#comments-title {
+    margin-right: 325px;
+    margin-left:0px;
+}
+.rightsb #comments-list .vcard {
+    float:right;
+    margin-left:65px;
+    margin-right:0px;
+}
+
+.rightsb #comments-list ul.children ul.children{
+    margin-right: 90px;
+    margin-left: 0px;
+}
+.rightsb #comments-list ul.children {
+    margin-right: 320px;
+    margin-left: 0px;
+}
+.rightsb .comment-body {
+    float: left;
+}
+
+.rightsb #respond {
+    margin-right: 325px;
+    margin-left: 0px;
+}
+.rightsb .children #respond {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+
+
+header.main {
+    margin: 10px 10px 25px 0;
+    padding: 0;
+    position:relative;
+}
+
+header h1 {
+
+    font-size:20px;
+    padding:10px 10px 10px 20px;
+    line-height: 20px;
+    float:left;
+}
+header.main h1 a {
+    font-family: "HaloHandletterRegular", cursive;
+    display: block;
+    font-size: 65px;
+    margin:10px 0px 0px;
+    text-decoration: none;
+}
+header.main h1 span {
+    display: inline-block;
+    font-size:14px;
+    margin-top: 14px;
+}
+
+.template-subtitle {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 325px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.rightsb .template-subtitle {
+    margin-left: 0px;
+    text-align:left;
+
+}
+.template-subtitle span {
+
+    padding:0px 10px 
+}
+
+/*
+    Navigation
+*/
+#nav { margin-top: 20px; }
+#nav ul {
+    font-family: 'Droid Serif', arial, serif;
+    font-weight: normal;
+    list-style:none;
+    float:right;
+    font-style:normal
+}
+
+#nav ul.menu > li {
+    float: left;
+    position:relative;
+    margin-right: 5px;
+}
+
+#nav ul.menu ul {
+    position:absolute;
+    top:auto;
+    display: none;
+    padding: 5px 0px;
+    margin:-1px 0 0 0px;
+    box-shadow:2px 3px 4px rgba(0, 0, 0, 0.2)
+
+}
+
+#nav ul.menu ul ul {
+    left: 200px;
+    margin-top:-30px;
+}
+
+#nav ul.menu li ul {
+    z-index:109;
+    -moz-border-radius: 0px 3px 3px 3px ;
+    -webkit-border-radius: 0px 3px 3px 3px ;
+    border-radius: 0px 3px 3px 3px;
+}
+
+#nav ul.menu li ul li{
+    float: none;
+    width:200px;
+
+}
+#nav ul.menu li {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#nav ul.menu li:hover {
+    background-color: #fff;
+    border-radius: 5px 5px 5px 5px;
+}
+#nav ul.menu li a{
+    padding:10px 15px;
+    color:#444;
+    font-size:14px;
+    display:block;
+    text-decoration: none;
+    position: relative;
+
+}
+
+#nav ul.menu li ul li a{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#nav ul.menu li ul li a:hover { padding-left:15px; }
+#nav ul.menu li.active > a {
+    z-index:110;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+    z-index: 110;
+    margin: 0px;
+}
+
+#nav ul.menu > li ul li a {
+    border: none;
+    font-style: normal
+}
+#nav ul.menu > li ul li a:hover {
+    background: #eee
+}
+#nav ul.menu li:hover > ul { display: block; }
+
+#nav label { display:none; }
+#nav form { margin-right:9px; }
+#nav #searchform input#s { width:100px; }
+
+/*
+    eof: Navigation
+*/
+
+
+#searchform input#s {
+    border: medium none;
+    float: left;
+    font-family: 'Droid Serif',arial,serif;
+    font-size: 15px;
+    padding: 7px 10px;
+    width: 160px;
+}
+#searchsubmit {
+    border: 0 none;
+    display: block;
+    font-size: 0;
+    height: 32px;
+    text-indent: -9999px;
+    width: 21px;
+    float:left;
+}
+
+/*
+    Articles main page
+*/
+article.post.error404 h2.entry-title {
+    font-size: 28px;
+    line-height: 34px;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+article.post.error404 {
+    width: auto;
+    background: url("images/recipe/teared-bg.png") repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 0;
+}
+#content article.post.error404 p {
+    padding: 10px 75px 20px;
+    text-align: center;
+}
+.page.page-template-template-advancedsearch-php article.post,
+.page.page-template-template-grid-php article.post,
+article.post {
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    /*    height: 335px;*/
+    margin-bottom: 30px;
+    /*    margin-right: 15px;*/
+    padding: 0;
+    width: 340px;
+    position:relative
+}
+article.post:nth-child(even) {
+    margin-right: 0px;
+}
+article.page h2.entry-title,
+article.post h2.entry-title {
+    color: rgba(0, 0, 0, 0.9);
+    font-family: 'Droid Serif',sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 23px;
+    margin: 0 15px -1px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#articles article.post .entry-content{
+    margin: 0 15px ;
+    padding: 10px;
+}
+/*#articles article.post.has-thumb  div.recipe-meta {
+    font-size: 11px;
+    padding: 5px 25px;
+    position: absolute;
+    bottom: 120px;
+    width: 290px;
+}*/
+#articles article.post  ul.recipe-meta {
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 11px;
+    margin-bottom: 6px;
+    padding:0px 15px 5px ;
+    list-style:none;
+    overflow:hidden
+}
+#articles article.post footer {
+    font-family: "Arial", sans-serif
+}
+
+
+#articles article footer {
+    background: url("images/double-line.png") repeat-x scroll top center #fafafa;
+    box-shadow: 0 0 10px #fff inset;
+    padding: 10px 0px;
+    margin-top:10px;
+}
+#articles article footer.entry-utility {
+    background:none;
+    box-shadow:0px 0px 0px;
+    padding:10px 20px;
+}
+#articles article.post footer a {
+    text-decoration:none;
+    color:#333
+}
+#articles article.post footer a:hover {
+    text-decoration:underline;
+    color:#000
+}
+#articles article.post.has-thumb footer a:hover {
+    color:#000
+}
+#articles article.post.no-thumb footer a {
+    color:#000
+}
+.published-time {
+    display: block;
+    font-size: 11px;
+    margin: 0 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.search .no-thumb .published-time,
+.no-thumb .published-time {
+    margin-top:10px;
+}
+
+.published-time span {
+    display: inline-block;
+    padding:0px 10px;
+}
+article.post h2 a {
+    text-decoration: none;
+}
+
+a.read-more { 
+    display: block;
+    font-size: 10px;
+    font-style: italic;
+    text-align: right;
+    text-decoration: none;
+    text-transform: none;
+
+}
+
+.post-meta {
+    list-style:none;
+    margin:0px;
+    padding:0px 15px;
+    overflow:hidden;
+    font-size:11px;
+}
+.post-meta li { 
+    float: right;
+    padding-right:10px;
+}
+.post-meta li.comments {
+    background: url("images/ico_comments.png") no-repeat scroll left 5px transparent;
+    padding-left: 16px;
+
+}
+.post-meta  li.recipe-servings {
+    background: url("images/ico_plate.png") no-repeat scroll left center transparent;
+    padding-left: 20px;
+
+}
+.post-meta li.recipe-time {
+    background: url("images/ico_clock.png") no-repeat scroll left center transparent;
+    padding-left: 20px;
+
+}
+/*.post-meta li.cats {
+    float: left;
+    max-width: 65%;
+}*/
+.post-meta li.cats span { font-style: italic}
+.post-meta li.author {
+    background: url("images/ico_author.png") no-repeat scroll left center transparent;
+    padding-left: 16px;
+}
+article.post .attachment-post-thumbnail {
+    height: auto;
+    width: 100%;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+article.post .attachment-post-thumbnail:hover {
+    opacity:0.6
+}
+article .entry-utility,
+article .entry-meta {
+    font-size:11px;
+    text-transform:uppercase;
+    font-family: 'Droid Sans', sans-serif;
+    margin-top: 18px;
+    clear:both
+}
+article .entry-utility a,
+article .entry-meta a{
+    text-decoration:none
+}
+
+.archive-page.entry-content ul {
+    list-style:none;
+    padding-left:0px;
+}
+.archive-page a { text-decoration:none; }
+
+body.author #author-info {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+body.author #author-data .avatar { float: left; margin-right: 10px; }
+body.author #author-data {
+    float: left;
+    width:300px;
+}
+body.author #author-desc {
+    float: right;
+    width:700px;
+}
+
+
+/*
+Articles main page - Excerpt mode
+*/
+.page-template-template-excerpt-php .exclay article.post,
+.exclay article.post {
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding: 0;
+    width:100%;
+    height:auto;
+}
+.exclay article.post.has-thumb .attachment-post-thumbnail {
+    float:left;
+    width:40%;
+    height:auto;
+}
+
+.exlay article.post.has-thumb .published-time {
+    margin-top:4px;
+}
+.exclay article.post.has-thumb .entry-wrapper {
+    float:right;
+    width:60%
+}
+.exclay #articles article.post .entry-content {
+    height: auto;
+    overflow: hidden;
+}
+.exclay #articles article.post.has-thumb footer{
+    clear:both
+}
+.exclay #articles article.post.no-thumb footer div.recipe-meta {
+    background: none repeat scroll 0 0 transparent;
+    color: inherit;
+    padding: 0;
+    position: static;
+    text-align: left;
+    width: auto;
+}
+
+
+/*
+Articles main page - Full mode
+*/
+.fulllay article.post {
+    background: transparent;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding: 10px 0px;
+    width:100%;
+    height:auto;
+}
+.fulllay #articles article.post .entry-content {
+    height: auto;
+    overflow: hidden;
+}
+
+.fulllay article.post h2.entry-title { font-size:28px;}
+
+/*
+* Sidebar 
+*/
+
+#primary {
+    float: left;
+    width:300px;
+}
+
+body.archive  #primary, 
+body.search #primary, 
+body.tag #primary { margin-top: -65px;}
+body.archive.author #primary { margin-top: 0px;}
+
+#sidebar {
+    margin: 0 30px 30px 0;
+    padding: 0;
+}
+#sidebar ul {
+    list-style: none;
+
+}
+#sidebar h3 {
+    font-family: 'Droid Serif',sans-serif;
+    font-size: 18px;
+    font-weight:normal;
+    margin: 5px 0;
+}
+
+#sidebar .widget {
+    padding:0 10px 15px;
+    overflow:hidden
+
+}
+footer .widget {
+    padding:20px 30px;
+}
+.widget ul {
+    list-style: none;
+}
+.widget ul ul {
+    padding-bottom:0px;
+}
+
+.widget ul li a {
+    text-decoration:none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    display:block;
+}
+.widget ul li a:hover {
+    padding-left:4px;
+}
+.widget ul li a span {
+    font-size:10px;
+    text-transform: uppercase
+}
+.widget_archive ul li {
+    text-align: right;
+    overflow: hidden
+}
+.widget_archive ul li a {
+    float: left;
+}
+
+.author-bio-box .avatar{
+    -moz-transform: rotate(-3deg);
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 6px;
+}
+.author-bio-box .author-name {
+    margin: 0px;
+    text-decoration:none;
+    font-size:14px;
+}
+.author-more {
+    font-family: "Arial",sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.author-bio-box p {
+    margin-bottom:10px;
+}
+.author-bio-box ul {
+    clear:both;
+    margin: 3px 0px 6px
+}
+#sidebar .widget.socialize {
+
+    overflow: visible;
+    width: 255px;
+}
+/*.widget.socialize ul {
+    overflow:hidden
+}*/
+.widget.socialize ul li{
+    float:left;
+    background: none;
+    padding:0px 12px 5px 0px;
+    height: 70px;
+}
+.widget.socialize ul li input {
+    padding:5px;
+
+    border-radius:5px;
+}
+
+#wp-calendar {
+    width: 100%;
+}
+#wp-calendar td {
+    text-align: center
+}
+#wp-calendar a {
+    text-decoration: none;
+}
+
+.widget.cookingpress-popular img,
+.widget.cookingpress-recent img {
+    float: left;
+    margin-right: 10px;
+    padding: 3px;
+}
+.widget.cookingpress-popular ul li,
+.widget.cookingpress-recent ul li {
+    overflow:hidden;
+    background:none;
+    padding:10px 0px;
+}
+.cookingpress-popular li span,
+.cookingpress-recent li span {
+    font-family: "Arial",sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.widget_search label {
+    display:none;
+}
+.widget_search #searchsubmit { width:50px }
+
+.widget.widget_links ul li a { display:inline }
+
+/*
+ socials
+*/
+ul#socials {
+    overflow:hidden;
+}
+ul#socials li {
+    float: left;
+    background: none;
+    padding:0px;
+    margin-right:4px;
+}
+#socials a {
+    display: block;
+    height: 32px;
+    margin: 5px 0;
+    text-indent: -9999px;
+    width: 37px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#socials a:hover {
+    opacity: 0.8;
+    border:0px;
+    padding:0px;
+    text-decoration: none;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+#socials #aim a { background: url("images/socials/aim.png") no-repeat left center; }
+#socials #apple a { background: url("images/socials/apple.png") no-repeat left center; }
+#socials #behance a { background: url("images/socials/behance.png") no-repeat left center; }
+#socials #blogger a { background: url("images/socials/blogger.png") no-repeat left center; }
+#socials #coroflot a { background: url("images/socials/coroflot.png") no-repeat left center; }
+#socials #delicious a { background: url("images/socials/delicious.png") no-repeat left center; }
+#socials #deviantart a { background: url("images/socials/da.png") no-repeat left center; }
+#socials #designmoo a { background: url("images/socials/designmoo.png") no-repeat left center; }
+#socials #digg a { background: url("images/socials/digg.png") no-repeat left center; }
+#socials #dribbble a { background: url("images/socials/Dribbble.png") no-repeat left center; }
+#socials #ember a { background: url("images/socials/Ember.png") no-repeat left center; }
+#socials #evernote a { background: url("images/socials/Evernote.png") no-repeat left center; }
+#socials #facebook a { background: url("images/socials/facebook.png") no-repeat left center; }
+#socials #forrst a { background: url("images/socials/Forrst.png") no-repeat left center; }
+#socials #goowalla a { background: url("images/socials/gowalla.png") no-repeat left center; }
+#socials #grooveshark a { background: url("images/socials/grooveshark.png") no-repeat left center; }
+#socials #icq a { background: url("images/socials/icq.png") no-repeat left center; }
+#socials #lastfm a { background: url("images/socials/lastfm.png") no-repeat left center; }
+#socials #myspace a { background: url("images/socials/myspace.png") no-repeat left center; }
+#socials #paypal a { background: url("images/socials/PayPal.png") no-repeat left center; }
+#socials #rss a { background: url("images/socials/rss.png") no-repeat left center; }
+#socials #skype a { background: url("images/socials/skype.png") no-repeat left center; }
+#socials #tumblr a { background: url("images/socials/tumblr.png") no-repeat left center; }
+#socials #twitter a { background: url("images/socials/twitter.png") no-repeat left center; }
+#socials #vcard a { background: url("images/socials/vcard.png") no-repeat left center; }
+#socials #vimeo a { background: url("images/socials/vimeo.png") no-repeat left center; }
+#socials #wiki a { background: url("images/socials/wiki.png") no-repeat left center; }
+#socials #zootools a { background: url("images/socials/zootools.png") no-repeat left center; }
+
+
+
+#content {
+    float: right;
+    margin-left: 20px;
+    width: 710px;
+}
+
+#content p {
+    padding: 10px 0 20px
+}
+
+/*
+single
+*/
+.page article.post,
+.single article.post {
+    background: none repeat scroll 0 0 transparent;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    float: none;
+    height: auto;
+    margin: 0;
+    padding: 10px 0 25px;
+    width: 100%;
+}
+
+.page article.page h2.entry-title,
+.single article.post h2.entry-title {
+    font-size:28px;
+    line-height:34px;
+    margin-bottom: 10px;
+}
+
+html body.single-attachment {
+    background-image: none;
+}
+html body.single-attachment #comments-title{
+    margin:20px 0px 0px;
+}
+html body.single-attachment .entry-content {
+    background: #fff;
+}
+.entry-attachment {
+    text-align: center;
+    padding-top:20px;
+}
+#content .entry-caption {
+    padding-top:20px;
+}
+#content .entry-caption p {
+    padding:0px 0px 5px
+}
+html body.single-attachment .page-title {
+    background: url("images/double-line.png") repeat-x scroll center center transparent;
+    text-decoration:none;
+    text-align:center;
+    display:block
+}
+html body.single-attachment .page-title span {
+    background:#E8E8E8;
+}
+
+.single-attachment #content{
+    width:auto;
+    float:none;
+    margin:0px
+}
+
+
+.page .published-time,
+.single .published-time {
+    margin:0px
+}
+
+img.size-large,
+img.size-full {
+    display: block;
+    height: auto;
+    padding: 5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    max-width:100%;
+}
+img.size-large.alignright,
+img.size-full.alignright {
+    margin-left:15px;
+}
+img.size-large.alignleft,
+img.size-full.alignleft {
+    margin-right:15px;
+}
+.entry-content ol,
+.entry-content ul{
+    padding: 10px 20px;
+}
+.footer-widgets iframe,
+.entry-content iframe {
+    max-width: 99%;
+}
+
+#entry-author-info {
+    clear: both;
+    overflow: hidden;
+    padding: 10px;
+}
+#entry-author-info .avatar {
+    float: left;
+    margin: 5px 15px 0 0;
+    padding: 3px;
+}
+
+#entry-author-info h4 {
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 0;
+}
+
+.pwbox {
+    padding:5px;
+    border:1px solid #ddd
+}
+#submit-btn {
+    padding:5px;
+}
+#submit-btn {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    padding: 6px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.post h1, .post h2, .post h3, .post h4, .post h5 {
+    margin-bottom: 0;
+    padding: 20px 0 5px;
+}
+.post h1 {
+    font-size:28px
+}
+.post h2 {
+    font-size:24px
+}
+.post h3 {
+    font-size:20px
+}
+.post h4 {
+    font-size:18px
+}
+.post h5 {
+    font-size:15px;
+    text-transform: uppercase
+}
+.archive-page  h5{
+    background:url("images/double-line.png") repeat-x scroll center bottom transparent
+}
+.post h6 {
+    font-size:13px;
+    text-transform: uppercase
+}
+
+dt {
+    font-weight:bold;
+}
+/*
+nav
+*/
+
+#nav-below {
+    background: url("images/double-line.png") repeat-x scroll center top #FAFAFA;
+    box-shadow: 0 0 10px #FFFFFF inset;
+    clear: both;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 10px;
+}
+#nav-below span {
+
+    font-size: 10px;
+    font-style: italic;
+
+    text-decoration: none;
+    text-transform: none;
+}
+#nav-below img {
+    background: #DDDDDD;
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+}
+#content #nav-below p {
+    padding-top:2px;
+    padding-bottom:0px;
+}
+.nav-previous {
+    float:left;
+    width:49%;
+    text-align:left;
+    cursor: pointer
+}
+.nav-previous img {
+    margin-right:10px;
+}
+.nav-next {
+    float:right;
+    width:49%;
+    text-align:right;
+    cursor: pointer
+}
+.nav-next img {
+    margin-left:10px;
+}
+#nav-below a {
+    text-decoration:none;
+}
+.current-menu-ancestor,
+.current-menu-item {
+    background: #FFFFFF;
+    border-radius: 5px ;
+}
+.arrow {
+    background-image:url('images/menu-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right center
+}
+
+/*
+    Featured slider
+*/
+
+#featured {
+    overflow:hidden;
+    max-height:460px
+}
+#featured-shadow {
+    background:url('images/shadow-featured.png') no-repeat top center;
+    width:100%;
+    height:40px;
+}
+
+/*#featured-container {
+  background: url("images/bg/tileable_wood_texture.png") repeat scroll center top transparent;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}*/
+
+.panel-wrapper h2 .post-ratings {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: auto;
+}
+.panel-wrapper h2.with-rating {
+    padding-top:15px
+}
+.panel-wrapper h2 {
+
+    font-size: 26px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+.panel-wrapper h2 a {
+    text-decoration:none;
+}
+.panel-wrapper p {
+
+    font-size: 14px;
+    color:#999;
+    margin-right: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+
+.panel-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.panel-container .post-ratings img {
+    width:auto;
+    height:auto;
+    float:left
+}
+
+
+/*
+* bof search
+*/
+
+/* Taxonomies */
+
+.advsearch {
+    border-radius: 5px 5px 5px 5px;
+    /*   clear: both;
+       overflow: hidden;*/
+    padding:20px 20px 20px;
+    text-align: left;
+}
+.advsearch select {
+    min-width:200px
+}
+.advsearch-cont {
+    margin-bottom: 35px;
+}
+.advsearch label {
+    width:150px;
+    float:left;
+    display:block;
+}
+.advsearch label.full {
+    float:none;
+    width:100%
+}
+#content .advsearch p {
+    padding:10px
+}
+.advsearch input#s {
+
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center top , #EEEEEE 1%, #FFFFFF 15%);
+    border: 1px solid #AAAAAA;
+    cursor: text;
+    height: auto !important;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px;
+    width:235px;
+    position: relative;
+
+}
+#custom-search {
+    clear: both;
+    display: block;
+    float: none;
+    overflow: hidden;
+    padding: 10px;
+}
+#custom-search label {
+    width:120px;
+    display:block;
+    float: left;
+}
+.catlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0 .5em .5em .5em;
+}
+.catlist a {
+    display: block;
+    float: left;
+    width: 165px;
+    margin: 0;
+    padding: .25em;
+}
+.taglist { 
+    padding: .25em;
+    overflow: auto;
+    font-size: 13px;
+    max-height: 150px;
+    margin: 20px 0px;
+}
+.taglist a {
+    display: block;
+    float: left;
+    text-decoration:none;
+    border-radius: 4px;
+    padding: 5px;
+    margin: .125em;
+}
+.taglist a.selectedtag {
+    border-radius:50px;
+    padding: 4px;
+}
+
+.searchcontrols { 
+    padding-left: 1.2em;
+    font-size: 12px;
+}
+
+.searchcontrols span {
+    float: left;
+    margin: 0;
+    padding: .4em 0 .4em 0;
+    margin: .5em 0;
+}
+
+
+.searchcontrols a { float: left; padding: .3em .6em; margin: .5em 0;}
+.searchcontrols a:hover {cursor: pointer;}
+
+
+#any {
+    margin-left: .4em;
+
+}
+
+#all { 
+    margin-right: .4em;
+}
+
+input.searchtags {
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    margin: -45px 0 0 1em;
+    padding: 5px 10px 5px 35px;
+}
+input.searchtags:hover {cursor: pointer;}
+p#relation .chzn-container {
+    top:8px;
+}
+#content p#relation { padding-top:0px; }
+/*
+* eof search
+*/
+
+.coda-slider-no-js .coda-slider { height: 200px; overflow: auto !important; padding-right: 20px }
+.coda-slider, .coda-slider .panel { width: 770px }
+.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel { width: 790px }
+.coda-slider-wrapper.arrows .coda-slider { margin: 0 10px }
+
+/* Arrow styling */
+.coda-nav-left a, .coda-nav-right a { 
+    padding: 5px;
+    width: 100px;
+}
+/* Panel padding */
+.coda-slider .panel-wrapper { 
+    position: relative;
+}
+
+/* Preloader */
+.coda-slider p.loading {
+    padding: 20px;
+    text-align: center
+}
+
+.coda-nav {
+    float: right;
+    width: 250px;
+}
+
+.coda-nav ul {
+    clear: both;
+    display: block;
+    margin: auto;
+    overflow: hidden
+}
+.coda-nav ul li { 
+    display: inline
+}
+
+.coda-nav ul li a { 
+    display: block;
+    font-size: 14px;
+    margin-right: 1px;
+    opacity: 0.6;
+    padding: 5px 10px;
+    text-decoration: none;
+    overflow:hidden;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.coda-nav ul li a.current {
+    opacity:1
+}
+.coda-nav ul li a:hover {
+    opacity:1
+}
+.coda-nav ul li a img {
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+
+/* Miscellaneous */
+.coda-slider-wrapper {
+    clear: both;
+    margin-bottom: 0px;
+    padding: 0;
+    position: relative;
+
+}
+
+.coda-slider {
+    overflow: hidden;
+    position: relative;
+    float:left;
+}
+
+.coda-slider .panel {
+    display: block;
+    float: left
+}
+.coda-slider .panel-container { 
+    position: relative;
+    overflow:hidden;
+
+}
+.coda-nav-left {
+    position: absolute;
+    left:0px;
+    top:35%;
+    z-index:9999
+}
+.coda-nav-right {
+    position: absolute;
+    right: -9px;
+    top:35%;
+    z-index:9999
+}
+.coda-nav-left a, .coda-nav-right a { 
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-indent:-9999px
+}
+.coda-nav-right a {
+    background: url("images/posts-next.png") no-repeat;
+    width: 25px;
+    height:76px;
+}
+.coda-nav-left a {
+    background: url("images/posts-prev.png") no-repeat;
+    width: 25px;
+    height:76px;
+}
+
+/*
+* Comments list
+*/
+
+
+#comments-list {
+    list-style:none;
+    margin:25px 0px 25px 15px
+}
+#comments-list ul {
+    list-style:none;
+}
+#comments-list ul.children {
+    margin-left:320px;
+}
+#comments-list ul.children .children{
+    margin-left:0px;
+}
+#comments-list ul.children .depth-2 .comment-body{
+    width:430px;
+}
+#comments-list ul.children .depth-3 .comment-body{
+    width:330px;
+}
+#comments-list ul.children .depth-2 .vcard{
+    margin:0px;
+}
+.pingback { margin-left:310px; margin-bottom:10px }
+.pingback .comment-edit-link { display:inline}
+a.comment-reply-link {
+    border-radius: 4px 4px 4px 4px;
+    float: right;
+    font-family: 'Droid Sans';
+    font-size: 10px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.comment-body {
+    float: right;
+    padding: 10px;
+    width: 685px;
+}
+.says {
+    font-size:12px;
+}
+#comments-list .vcard{
+    float: left;
+    margin-right: 65px;
+    padding: 15px 10px 10px 0;
+    width: 235px;
+}
+#comments-list .vcard a{
+    text-decoration: none;
+}
+li.comment .avatar {
+    float:left;
+    margin-right: 15px;
+    border-radius:5px;
+}
+
+h3#comments-title {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 325px;
+    text-align: center;
+    margin-top:20px;
+}
+h3#comments-title span {
+    display: inline-block;
+    margin: 0 40px;
+    padding: 0 10px;
+}
+a.comment-edit-link,
+a.comment-date {
+    display: block;
+    font-size:11px
+}
+
+li.comment article {
+    overflow: hidden;
+    padding: 15px 0px;
+}
+#respond {
+    margin-left: 325px;
+    margin-bottom:20px;
+}
+.children #respond {
+    margin-left:0px;
+}
+h3#reply-title {
+    font-size:20px;
+}
+.comment-notes,
+.form-allowed-tags {
+    font-size:11px;
+    margin-left:125px
+}
+.subscribe-to-comments {
+    margin:10px 0px
+}
+#commentform label{
+    width:120px;
+    display: block;
+    float:left;
+}
+#commentform .subscribe-to-comments  label {
+    width:500px;
+}
+#commentform p {
+    padding:6px 0px
+}
+#commentform textarea,
+#commentform input {
+    border: 1px solid #ddd;
+    padding:4px;
+}
+input#submit {
+    margin-left: 120px;
+}
+span.required {
+    display: none;
+}
+
+/*
+* Footer
+*/
+
+footer.contentinfo {
+    clear: both;
+    margin: 20px 0 0;
+    overflow: hidden;
+    width:100%;
+}
+#pattern-container {
+    clear: both;
+    margin: 50px 0 0 0px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.textwidget p {
+    padding-bottom:15px;
+}
+.footer-widgets {
+    margin-bottom: 20px;
+}
+.footer-widgets h3 {
+    font-size:21px;
+    margin-bottom: 15px
+}
+.footer-widgets h3 span{
+    padding:0px 10px 0px;
+}
+.fcolumn {
+    float: left;
+    width: 33%;
+    padding-bottom: 20px;
+}
+.fcolumn:last-child {
+    border-right: 0px ;
+}
+#footer-right-column.fcolumn {
+    border:none;
+}
+#footer-bottom {
+    clear:both;
+    padding:20px;
+}
+
+#footer-bottom a {
+    text-decoration: none;
+    font-size:11px;
+}
+#gototop {
+    float:right
+}
+
+.printfriendly {
+    -moz-transform: rotate(1deg);
+    background: url("images/recipe/yellowcard-bg.png") no-repeat scroll right top #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 4px;
+}
+.printfriendly a { text-decoration: none}
+.entry-utility {
+
+    opacity: 1;
+    padding: 15px;
+    overflow:hidden;
+
+}
+.entry-utility .post-meta { float:left; padding:0px }
+.entry-utility .post-meta li { float: left; }
+.entry-utility .post-ratings {
+    float: right;
+    opacity: 1;
+    width: auto;
+}
+.post-ratings em { font-style: normal}
+table {
+    width:100%;
+}
+table td { padding:10px; }
+
+
+/*
+* Recipies 
+*/
+.ingredients {
+    width:65%
+}
+.hasImage #recipe-desc {
+    width:70%;
+}
+#purerecipe-wrapper.photo h3 {
+    width:70%;
+}
+.purerecipe {
+    position: relative;
+    margin:30px 0px 
+}
+.purerecipe header {
+    padding:40px 30px 10px;
+}
+
+#recipe-content {
+    padding:0px 30px 20px;
+    overflow: hidden;
+}
+
+.purerecipe.tearedh .recipe-image,
+.purerecipe.teared .recipe-image {
+    padding:5px;
+    background: #fff;
+    position: absolute;
+    top:0px;
+    right:-20px;
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    box-shadow:0px 0px 1px rgba(0,0,0,0.3)
+}
+
+p#author-data {
+    padding:0px;
+    font-size:11px;
+    font-style:italic
+}
+.purerecipe ul {
+    list-style:none;
+    padding: 5px 0px
+}
+.purerecipe ul li {
+    margin:4px 0px
+}    
+.purerecipe ul.recipe-metadata {
+    padding:0px;
+}
+.purerecipe em {
+    background: url('images/recipe/penball-line.png') repeat-x bottom;
+}
+#purerecipe-wrapper {
+    margin:40px 0px 20px;
+}
+
+/*
+* Teared paper recipe theme
+*/
+
+.purerecipe.teared {
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    border-color: #DDDDDD;
+    border-style: solid;
+    margin-top: -14px;
+    margin-bottom:0px;
+    border-width:0px 1px 1px 1px;
+    box-shadow:2px 3px 3px #DDDDDD;
+
+}
+
+
+.purerecipe.teared h4,
+.purerecipe.teared h3 {
+    font-family: 'Satisfy', cursive;
+    font-size:30px;
+}
+.purerecipe.teared h4 {
+    margin:0px 0px 5px;
+    padding-top:15px;
+    font-size:24px;
+    font-weight: normal;
+}
+
+.purerecipe.teared:before {
+    background: url("images/recipe/pin-left.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 69px;
+    position: absolute;
+    right: 41px;
+    top: -29px;
+    width: 72px;
+    z-index: 9999;
+}
+.purerecipe.teared #recipe-content{
+    background: url('images/recipe/teared-bg.png') repeat top left;
+    overflow:hidden;
+}
+.purerecipe.teared #recipe-content:before {
+    background: url("images/recipe/coffe-stain.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 360px;
+    position: absolute;
+    right: 0;
+    top: 160px;
+    width: 139px;
+}
+.purerecipe.teared header {
+    background: url('images/recipe/teared-bg-top.png') repeat top left;
+}
+
+.purerecipe.teared ul.ingredients {
+    width:70%;
+}
+.purerecipe.teared .instructions ul li,
+.purerecipe.teared ul.ingredients li {
+    background: url("images/recipe/checkbox.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    cursor: pointer
+}
+.purerecipe.teared ul li.active {
+    background: url("images/recipe/checkbox-checked.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    text-decoration: line-through
+}
+.purerecipe.teared #recipe-add-data {
+    background: url("images/recipe/yellowcard-bg.png") no-repeat scroll right top #FFFF9E;
+    width:225px;
+    position: absolute;
+
+    right:-25px;
+    padding:20px;
+    font-size:14px;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.3);
+
+}
+.purerecipe.teared #recipe-add-data:before {
+    background: url("images/recipe/pin-right.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 70px;
+    position: absolute;
+    right: 41px;
+    top: -15px;
+    width: 57px;
+    z-index: 9999;
+}
+#purerecipe-wrapper.teared {
+    -moz-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    background: url("images/recipe/teared-bg.png") repeat scroll left top transparent;
+    border: 1px solid #DDDDDD;
+    padding: 0;
+    box-shadow:0px 2px 3px #DDDDDD
+}
+
+/*
+* Teared paper ver 2 recipe theme
+*/
+.purerecipe.tearedh {
+    -moz-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+    background: url('images/recipe/tearedh-bg.png') repeat top left;
+    margin-top: -14px;
+    margin-bottom:0px;
+    padding-left:10px;
+    box-shadow:1px 1px 1px #eee;
+    border-radius:15px 0px 0px 0px
+}
+.purerecipe.tearedh header {
+    padding-top:20px;
+}
+
+.purerecipe.tearedh h4,
+.purerecipe.tearedh h3 {
+    font-family: 'Satisfy', cursive;
+    font-size:30px;
+}
+.purerecipe.tearedh h4 {
+    margin:0px 0px 5px;
+    padding-top:15px;
+    font-size:24px;
+    font-weight: normal;
+}
+
+.purerecipe.tearedh:before {
+    background: url("images/recipe/pin-left.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 69px;
+    position: absolute;
+    right: 41px;
+    top: -19px;
+    width: 72px;
+    z-index: 9999;
+}
+
+.purerecipe.tearedh #recipe-content:before {
+    background: url("images/recipe/coffe-stain.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 360px;
+    position: absolute;
+    right: 0;
+    top: 233px;
+    width: 139px;
+}
+
+.purerecipe.tearedh ul.ingredients {
+    width:70%;
+}
+
+.purerecipe.tearedh .instructions ul li,
+.purerecipe.tearedh ul.ingredients li {
+    background: url("images/recipe/checkbox.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    cursor: pointer
+}
+.purerecipe.elegant ul.ingredients li.separator,
+.purerecipe.minimal ul.ingredients li.separator,
+.purerecipe.teared ul li.separator,
+.purerecipe.tearedh ul li.separator {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-left: 0;
+}
+.purerecipe.tearedh ul li.active {
+    background: url("images/recipe/checkbox-checked.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    text-decoration: line-through
+}
+.purerecipe.tearedh #recipe-add-data {
+    background: url("images/recipe/yellowcard-bg.png") no-repeat scroll right top #FFFF9E;
+    width:225px;
+    position: absolute;
+    right:-25px;
+    padding:20px;
+    margin-top:-30px;
+    font-size:14px;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.3);
+}
+
+.purerecipe.tearedh #recipe-add-data:before {
+    background: url("images/recipe/pin-right.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 70px;
+    position: absolute;
+    right: 41px;
+    top: -15px;
+    width: 57px;
+    z-index: 9999;
+}
+#purerecipe-wrapper.tearedh {
+    -moz-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    background: url("images/recipe/tearedh-bg.png") repeat scroll left top transparent;
+    padding: 0;
+}
+
+/*
+* Elegant recipe Theme
+*/
+#purerecipe-wrapper.elegant {
+    background:#f4f2e5;
+    padding: 20px;
+    border:1px solid rgba(0,0,0,0.1);
+    box-shadow:0px 0px 3px #ddd;
+}
+.purerecipe.elegant {
+    margin:0px;
+    border:1px solid rgba(0,0,0,0.1);
+}
+.purerecipe.elegant header {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px 3px 3px 3px;
+    margin: 1px;
+    padding-top: 20px;
+    text-align: center;
+    text-shadow:0px 1px 0px #fff;
+    position:relative;
+}
+
+.purerecipe.elegant header:after {
+    background: url("images/recipe/ornaments.png") no-repeat scroll right top transparent;
+    content: "";
+    display: block;
+    height: 33px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 35px;
+    z-index: 9999;
+}
+.purerecipe.elegant header:before {
+    background: url("images/recipe/ornaments.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 33px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 35px;
+    z-index: 9999;
+}
+.purerecipe.elegant header h3 {
+    font-weight:normal;
+}
+
+.purerecipe.elegant h4 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 15px 0 0;
+}
+.elegant .hasImage #recipe-desc {
+    width: 100%;
+}
+.purerecipe.elegant em {
+    background:none;
+}
+.purerecipe.elegant #recipe-desc{
+    font-size:14px;
+}
+.purerecipe.elegant  ul.recipe-metadata {
+    overflow:hidden;
+    margin:0px;
+}
+.purerecipe.elegant .recipe-metadata li {
+    float:left;
+    margin-right:5px;
+}
+.purerecipe.elegant .instructions ul li,
+.purerecipe.elegant ul.ingredients li {
+    background: url("images/recipe/checkbox-el.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    cursor: pointer;
+}
+.purerecipe.elegant ul li.active {
+    background: url("images/recipe/checkbox-checked-el.png") no-repeat scroll left 3px transparent;
+    padding-left:20px;
+    text-decoration: line-through
+}
+.purerecipe.elegant #recipe-add-data {
+    background: url("images/double-line.png") repeat-x scroll center bottom transparent;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.purerecipe.elegant .recipe-image {
+    background: rgba(0,0,0,0.1);
+    float: right;
+    margin: 30px 0 0 20px;
+    padding: 5px;
+    box-shadow:1px 1px 0px #fff;
+    position: static;
+}
+.purerecipe.elegant #recipe-content {
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 1px;
+    position:relative;
+    padding: 0 20px 45px;
+    font-size:14px;
+    overflow: visible;
+}
+#purerecipe-wrapper.photo .purerecipe.elegant h3 {
+    width:100%
+}
+.purerecipe.elegant #recipe-content:after {
+    background: url("images/recipe/ornaments.png") no-repeat scroll right bottom transparent;
+    content: "";
+    display: block;
+    height: 33px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 35px;
+    z-index: 9999;
+}
+.purerecipe.elegant #recipe-content:before {
+    background: url("images/recipe/ornaments.png") no-repeat scroll left bottom transparent;
+    content: "";
+    display: block;
+    height: 33px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 35px;
+    z-index: 9999;
+}
+/*
+* Minimal recipe Theme
+*/
+#purerecipe-wrapper.minimal {
+    padding:0px;
+    margin:0px;
+}
+.purerecipe.minimal {
+    margin:0px;
+
+}
+.purerecipe.minimal header {
+    padding: 20px 0px 20px;
+    position:relative;
+}
+
+.purerecipe.minimal header h3 {
+    font-weight:normal;
+}
+
+.purerecipe.minimal h4 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 15px 0 0;
+}
+.elegant .hasImage #recipe-desc {
+    width: 100%;
+}
+.purerecipe.minimal em {
+    background:none;
+}
+.purerecipe.minimal #recipe-desc{
+    font-size:14px;
+}
+.purerecipe.minimal  ul.recipe-metadata {
+    overflow:hidden;
+    margin:0px;
+}
+.purerecipe.minimal .recipe-metadata li {
+    float:left;
+    margin-right:5px;
+}
+.purerecipe.minimal .instructions ul li,
+.purerecipe.minimal ul.ingredients li {
+    background: url("images/recipe/checkbox_no.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    cursor: pointer;
+}
+.purerecipe.minimal ul li.active {
+    background: url("images/recipe/checkbox_yes.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    text-decoration: line-through
+}
+.purerecipe.minimal #recipe-add-data {
+    background: url("images/double-line.png") repeat-x scroll center bottom transparent;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.hasImage #recipe-add-data {
+    width:65%;
+}
+
+.purerecipe.minimal .recipe-image {
+    background: #eee;
+    float: right;
+    margin: 30px 0 0 20px;
+    padding: 5px;
+    position: static;
+}
+.purerecipe.minimal #recipe-content {
+    position:relative;
+    padding: 0 0px 45px;
+    font-size:14px;
+    overflow:visible
+}
+
+blockquote,
+blockquote.q-left{
+    background: url("images/recipe/tearedh-bg.png") repeat scroll left -1px transparent;
+
+    float: left;
+    font-family: 'Droid Serif',arial,serif;
+    font-size: 13px;
+    font-style: italic;
+    margin: 10px 25px 5px 0;
+    padding: 5px 15px 5px 31px;
+    width: 240px;
+    position: relative;
+
+}
+blockquote:before {
+    position: absolute;
+    background: url('images/sketch.png') no-repeat;
+    display: block;
+    top:-13px;
+    left:30%;
+    width: 99px;
+    height: 26px;
+    content: " "
+}
+blockquote.q-right{
+    background: url("images/recipe/tearedh-bg.png") repeat scroll left -1px transparent;
+    float: right;
+    width:240px;
+    padding:5px 15px 5px 35px;
+    border-right: none;
+    font-style: italic;
+    font-size:13px;
+    margin:10px 0px 10px 20px;
+    font-family: 'Droid Serif', arial, serif;
+}
+.comment-body blockquote {
+    width:auto;
+    float:none
+}
+blockquote p {
+    line-height: 1.8em
+}
+
+#tag-description {
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.tag-image {
+    float:left;
+    padding:10px;
+    margin:10px 20px 10px 0px;
+    border:1px solid #ddd;
+    background:#fff;
+    max-width: 300px;
+    height: auto;
+}
+/*
+* Some shortcodes styling
+*/
+
+input#submit,
+a.button {
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;	
+    transition: background 0.5s ease-in-out;
+    border-radius: 24px 24px 24px 24px;
+    font-family: 'Droid Serif';
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 12px;
+    padding: 9px 16px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-image: none;
+    text-decoration: none;
+}
+a.button {
+    color:#000;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;	
+    transition: background 0.5s ease-in-out;
+}
+a.button.blue { background-color: #d5dff6; color:#5c7cc4; text-shadow:0px 1px 0px #fff }
+a.button.green { background-color: #e0f0ce; color:#395b13; text-shadow:0px 1px 0px #fff }
+a.button.red { background-color: #ffc5bd; color:#831001; text-shadow:0px 1px 0px #fff }
+a.button.yellow { background-color: #f9f9a7; color:#555;  text-shadow:0px 1px 0px #fff }
+a.button.orange { background-color: #fde7c4; color:#b97d1e;  text-shadow:0px 1px 0px #fff }
+a.button.pink { background-color: #f4d2f3; color:#850781;  text-shadow:0px 1px 0px #fff }
+a.button.brown { background-color: #B99B76; color:#482e04;  text-shadow:0px 0px 0px #cda059 }
+a.button.black { background-color: #111; color:#888; text-shadow:0px 0px 0px #222 }
+a.button.black:hover {  background: #444; text-shadow:0px 0px 0px #222; color:#888; }
+a.button:hover {
+    background: #ddd;
+    color:#000;
+
+}
+
+.dropcap {
+    float: left;
+    font-family: "Droid Serif","Tahoma",sans-serif;
+    font-size: 50px;
+    padding: 15px 5px 0 0;
+}
+
+.box-ok-outer {
+    border:1px solid #afcd7f;
+    margin:20px 0px;
+}
+.box-ok {
+    border:3px solid #fff;
+    background: #f6ffec;
+    padding:15px;
+    color:#608722;
+    font-size:14px;
+    font-family: "Droid sans", arial, serif
+}
+
+#content .box-ok p {
+    background: url("images/ok.png") no-repeat top left;
+    padding-left: 45px;
+}
+
+.box-question-outer {
+    border:1px solid #a2c2d4;
+    margin:20px 0px;
+}
+.box-question {
+    border:3px solid #fff;
+    background: #eef8ff;
+    padding:15px;
+    color:#327a97;
+    font-size:14px;
+    font-family: "Droid sans", arial, serif
+}
+#content .box-question p {
+    background: url("images/question.png") no-repeat top left;
+    padding-left: 45px;
+}
+
+.box-error-outer {
+    border:1px solid #e7895b;
+    margin:20px 0px;
+}
+.box-error {
+    border:3px solid #fff;
+    background: #FFEFE8;
+    padding:15px;
+    color:#cf4913;
+    font-size:14px;
+    font-family: "Droid sans", arial, serif
+}
+#content .box-error p {
+    background: url("images/boxerror.png") no-repeat 5px 5px;
+    padding-left: 45px;
+}
+
+.box-info-outer {
+    border:1px solid #deae62;
+    margin:20px 0px;
+}
+.box-info {
+    border:3px solid #fff;
+    background: #ffedd0;
+    padding:15px;
+    color:#de8a19;
+    font-size:14px;
+    font-family: "Droid sans", arial, serif
+}
+#content .box-info p {
+    background: url("images/info.png") no-repeat top left;
+    padding-left: 45px;
+}
+
+.half, .half-last {
+    float: left;
+    margin: 0px 6% 20px 0;
+    width: 47%;
+}
+
+.half-last {
+    margin-right: 0;
+}
+
+.one-three, .one-three-last {
+    float: left;
+    margin: 0px 4% 20px 0;
+    width: 30%;
+}
+.one-three-last {
+    margin-right: 0;
+}
+.one-fourth, .one-fourth-last {
+    float: left;
+    margin: 0px 2% 20px 0;
+    width: 23%;
+}
+.one-fourth-last {
+    margin-right: 0;
+}
+.one-fifth, .one-fifth-last {
+    float: left;
+    margin: 0px 2% 20px 0;
+    width:18%;
+}
+.one-fifth-last {
+    margin-right: 0;
+}
+
+.three-fourth {
+    float: left;
+    margin: 0px 4% 20px 0;
+    width: 73%;
+    margin-right: 0;
+}
+.three-three {
+    float: left;
+    margin: 0px 5% 20px 0;
+    width: 66%;
+    margin-right: 0;
+}
+
+.two-fifth {
+    float: left;
+    margin: 0px 4% 20px 0;
+    width:38%;
+
+}
+
+.three-fifth {
+    float: left;
+    margin: 0px 5% 20px 0;
+    width: 58%;
+    margin-right: 0;
+}
+
+
+hr {
+    height: 0px;
+    clear: both;
+    margin: 15px 0px;
+}
+
+.hr {
+    text-align: right;
+    font-size:11px;
+    text-transform: uppercase;
+    cursor: pointer;  
+    clear: both;
+
+}
+
+
+div.purelist ul {
+    list-style: none;
+}
+#post div.purelist li {
+    padding-left:20px;
+}
+div.asterisk li { background: url("images/lists/asterisk_yellow.png") no-repeat 0px 5px transparent; }
+div.go li { background: url("images/lists/bullet_go.png") no-repeat 0px 5px transparent; }
+div.bullet_green li { background: url("images/lists/bullet_green.png") no-repeat  0px 5px transparent; }
+div.bullet_orange li { background: url("images/lists/bullet_orange.png") no-repeat  0px 5px transparent; }
+div.bullet_pink li { background: url("images/lists/bullet_pink.png") no-repeat  0px 5px transparent; }
+div.bullet_purple li { background: url("images/lists/bullet_purple.png") no-repeat 0px 5px transparent; }
+div.bullet_star li { background: url("images/lists/bullet_star.png") no-repeat 0px 5px transparent; }
+div.bullet_red li { background: url("images/lists/bullet_red.png") no-repeat 0px 5px transparent; }
+div.bullet_yellow li { background: url("images/lists/bullet_yellow.png") no-repeat 0px 5px transparent; }
+div.information li { background: url("images/lists/information.png") no-repeat 0px 5px transparent; }
+div.key li { background: url("images/lists/key.png") no-repeat 0px 5px transparent; }
+div.lightning li { background: url("images/lists/lightning.png") no-repeat 0px 5px transparent; }
+div.picture li { background: url("images/lists/picture.png") no-repeat 0px 5px transparent; }
+div.star li { background: url("images/lists/star.png") no-repeat 0px 5px transparent; }
+div.tag_green li { background: url("images/lists/tag_green.png") no-repeat 0px 5px transparent; }
+div.tag_orange li { background: url("images/lists/tag_orange.png") no-repeat 0px 5px transparent; }
+div.tag_pink li { background: url("images/lists/tag_pink.png") no-repeat 0px 5px transparent; }
+div.tag_purple li { background: url("images/lists/tag_purple.png") no-repeat 0px 5px transparent; }
+div.tag_red li { background: url("images/lists/tag_purple.png") no-repeat 0px 5px transparent; }
+div.tag_yellow li { background: url("images/lists/tag_purple.png") no-repeat 0px 5px transparent; }
+
+.tabs-content .tab {
+    display:none;
+    line-height: 1.6em;
+    margin-top: 0px;
+    padding: 15px;
+    -webkit-border-radius: 0 0 4px 4px ;
+    -moz-border-radius: 0 0 4px 4px ;
+    border-radius:  0 0 4px 4px;
+}
+.tabs-content {
+    margin-top:-1px
+}
+.tabs-content .tab:first-child {
+    display:block;
+}
+ul.tabs {
+    list-style: none;
+    margin:0px;
+    margin-top:25px;
+    padding:3px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+ul.tabs li {
+    display: inline;
+    padding:10px 10px 8px;
+    margin:0px 0px 0px 3px;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    font-size: 15px;
+    cursor: pointer;
+    border-bottom: 0px;
+}
+
+ul.tabs li a {
+
+    text-decoration: none
+}
+
+div.accordion {
+    margin:10px 0px
+}
+
+div.accordion h4 {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding:7px;
+    margin:2px 0px 0px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+div.accordion h4 a{
+    text-decoration: none;
+    padding-left:10px
+}
+
+div.accordion div {
+
+}
+
+
+h4.toggle-trigger {
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    margin: 2px 0 20px;
+    padding: 7px;
+}
+h4.toggle-trigger.active {
+    margin-bottom: 0px
+}
+
+
+
+
+h4.toggle-trigger {
+    background: url("images/expand.gif") no-repeat scroll left center ;
+    padding-left:15px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size:16px;
+}
+
+h4.toggle-trigger.active {
+    background: url("images/expanded.gif") no-repeat scroll left center ;
+}
+
+div.accordion h4 {
+    background: url("images/expand.gif") no-repeat scroll left center transparent;
+
+}
+div.accordion h4.active {
+    background: url("images/expanded.gif") no-repeat scroll left center transparent;
+}
+div.accordion h4 a {
+    color:#444
+}
+
+div.accordion {
+    margin: 10px 0;
+}
+#mobile-nav {
+    display:none
+}
+
+
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+.flexmain-container {
+    width:80%;
+    float:left;
+}
+#flexmain-thumbs {
+    width:20%;
+    float:right;
+    background: url("images/recipe/tearedh-bg-h.png") repeat scroll 0 0 transparent;
+}
+.flex-slider-wrapper {
+    background: url("images/recipe/tearedh-bg-h.png") repeat scroll 0 0 transparent;
+    padding-bottom: 20px;
+}
+#flexmain-thumbs ul { list-style: none; margin-top:10px; }
+#flexmain-thumbs ul li { float: left; padding:10px}
+#flexmain-thumbs ul li a { display: block }
+#flexmain-thumbs ul li a img { display: block }
+#flexmain-thumbs ul li.active {
+    background: #eee;
+}
+#flexmain-thumbs .flex-direction-nav li .next {right: 20%;}
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.entry-content .slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {width: auto; margin: 0; padding: 0;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block; height: auto;}
+.flex-pauseplay span {text-transform: capitalize;}
+ul.slides {list-style: none}
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+    background: url("images/recipe/tearedh-bg.png") repeat scroll 0 0 transparent;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 30px;
+    position: relative;
+    zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+               filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+p.flex-caption,
+#content p.flex-caption {width: 94%; padding: 2%; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 14px; line-height: 18px;}
+.flexslider.main p.flex-caption a { color:#fff; text-decoration: none}
+.flexslider.main p.flex-caption {
+    background:#000;
+    width:auto;
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: 25px;
+    width: auto;
+    font-size: 28px;
+    color: #000000;
+}
+.flexslider.main p.flex-caption a {
+    color: #000000;
+    font-size: 28px;
+    text-shadow: 1px 0 0;
+}
+#content p.flex-caption {
+    width:94%;
+
+}
+
+
+/* Direction Nav */
+.flex-direction-nav li a {
+    background: url("images/bg_direction_nav_note.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 53px;
+    margin: -13px 0 0;
+    position: absolute;
+    text-indent: -9999px;
+    top: 44%;
+    width: 50px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    -moz-transform:rotate(2deg);
+    -webkit-transform:rotate(2deg);
+    transform:rotate(2deg);
+}
+
+.flex-direction-nav li .next {background-position: -53px 0; right: 0px;-moz-transform:rotate(-2deg);}
+.flex-direction-nav li .prev {left: 0px;}
+.flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; background: url(images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+.entry-content ul#flex-nav {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+}
+
+ul#flex-nav li { float:left; }
+.es-carousel-wrapper {
+    position: relative;
+}
+.es-carousel {
+    overflow: hidden;
+}
+.es-carousel ul li {
+    display: block;
+    float: left;
+    height: 100%;
+
+}
+.es-carousel ul li a { opacity:0.71}
+.es-carousel ul li.active a { opacity:1}
+.es-carousel ul li.current a { opacity:1}
+.rg-thumbs {
+    margin:20px 14px 8px;
+}
+.es-nav span {
+    background: url("images/nav_thumbs_note.png") no-repeat scroll left top transparent;
+    cursor: pointer;
+    height: 26px;
+    left: -14px;
+    margin-top: -13px;
+    opacity: 0.8;
+    position: absolute;
+    text-indent: -9000px;
+    top: 50%;
+    width: 14px;
+}
+.es-nav span.es-nav-next {
+    background-position: right top;
+    left: auto;
+    right: -14px;
+}
+
+.es-carousel ul li a {
+    display:block;
+}
+
+.entry-content .flex-direction-nav { padding:0px;}
+
+@media only screen and (min-width: 992px) and (max-width: 1070px) {
+
+    .container { width: 950px; }
+    #primary { width: 260px; }
+    .page article.post, .single article.post { width:100%; }
+    #content { width:670px; }
+
+    article.post { width:320px; overflow:hidden }
+    #articles article.post.has-thumb footer div.recipe-meta {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+        bottom: 132px;
+        font-size: 11px;
+        padding: 5px 15px;
+        position: absolute;
+        width: 290px;
+    }
+
+    #searchform input#s { width:130px }
+
+    #articles article.post footer div.recipe-meta {width:270px;}
+    .exclay #articles article.post.has-thumb footer div.recipe-meta { width: 248px; }
+
+    .widget.socialize { height: auto; width: 207px; }
+    .comment-body { width:600px }
+    #comments-list ul.children .depth-2 .comment-body { width:410px; }
+
+    .rightsb #comments-list ul.children { margin-right:252px }
+    body.author #author-data {
+        float: left;
+        width:300px;
+    }
+    body.author #author-desc {
+        float: right;
+        width:650px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    header h1 { text-align:center; }
+    #mobile-nav { display:block; margin:0px; float:right; }
+
+    #nav ul { display:none }
+
+    .container { width: 712px; padding:0px; }
+    .rightsb .container.bottom { overflow: hidden; }
+
+    #primary { float: left; width: 230px; }
+
+    .rightsb #content { margin-right:0px; }
+    #content { float: right; margin-left: 0px; width: 480px;  }
+
+
+    article.post { width:230px; margin-right:20px; margin-bottom:20px; height: auto }
+    #articles article.post .entry-content { height: 135px; overflow: hidden; }
+
+    div.recipe-meta { display:none }
+
+    #sidebar { margin: 0 10px 20px 0; }
+
+    #searchform input#s { width:110px }
+
+    .rightsb h3#comments-title,
+
+    h3#comments-title { margin-left:0px; margin-right:0px; }
+
+    #sidebar .widget.socialize { height: auto; width: auto; }
+
+    .page article.post, .single article.post { width: 460px; }
+
+    .rightsb #respond { margin:0px; }
+
+    #respond,
+    #comments-list ul.children {
+        margin-left:0px;
+    }
+
+    .rightsb #comments-list .vcard {
+        float: right;
+        margin-left: 25px;
+        margin-right: 0;
+        padding:10px 10px 10px 0
+    }
+
+    .rightsb #comments-list ul.children { margin:0px;}
+
+    .rightsb .comment-body {
+        float: left;
+        width: 400px;
+    }
+    .comment-body { width: 430px;}
+    #comments-list .vcard { margin-right: 0px }
+
+    .coda-nav { width:200px }
+    .coda-slider, .coda-slider .panel { width: 502px; }
+
+    .purerecipe.teared #recipe-add-data { position:static; width:auto }
+    .purerecipe.teared #recipe-add-data:before { display:none; }
+    .purerecipe.teared header h3 { max-width: 270px}
+    .purerecipe.tearedh .recipe-image, .purerecipe.teared .recipe-image { max-width: 165px; height: auto }
+    .template-subtitle {
+        margin-left:0px;
+        margin-right:0px;
+    }
+    body.author #author-data {
+        float: left;
+        width:300px;
+    }
+    body.author #author-desc {
+        float: right;
+        width:410px;
+    }
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+    #featured-shadow,
+    #featured {
+        display:none;
+    }
+    .exclay article.post.has-thumb .attachment-post-thumbnail {
+        width:100%;
+        float:none;
+    }
+    .exclay article.post.has-thumb .entry-wrapper {
+        float:none;
+        width:100%;
+    }
+    .rightsb h3#comments-title { margin:0px;}
+    body.author #author-data {
+        float:none;
+        width:auto;
+    }
+    body.author #author-desc {
+        float:none;
+        width:auto;
+    }
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    #mobile-nav {
+        display:block;
+        margin:0px auto;
+    }
+
+    header h1 {
+        float:none;
+        text-align:center;
+    }
+    #nav ul {
+
+        display:none;
+    }
+
+    .container {
+        width: 100%;
+        padding:0px;
+    }
+    .rightsb #primary,
+    #primary {
+        float: none;
+        width: 93%;
+    }
+    .rightsb #content,
+    #content {
+        float: none;
+        margin-left: 00px;
+        width: 100%;
+    }
+    article.post {
+        width:230px;
+        margin-right:20px;
+        margin-bottom:20px;
+        height: auto;
+    }
+    div.recipe-meta { display:none}
+
+    .footer-widgets {
+        box-shadow:0px;
+    }
+    .nav-next,
+    .nav-previous {
+        width: 100%;
+        float:none;
+    }
+    .page article.page h2.entry-title, .single article.post h2.entry-title {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+    #articles {
+        overflow:hidden
+    }
+    .rightsb #sidebar,
+    #sidebar {
+        margin: 0 10px 20px 0;
+    }
+    .rightsb #primary {
+        float:none;
+    }
+    body.archive #primary, body.search #primary, body.tag #primary {
+        margin-top:0px
+    }
+    h3#comments-title {
+        margin-left:0px;
+    }
+    .purerecipe.teared:before {
+        display:none;
+    }
+    #searchform input#s {
+        width: 80%;
+    }
+    #articles article.post .entry-content {
+        height: 135px;
+        overflow: hidden;
+    }
+    #sidebar .widget.socialize {
+        height: auto;
+        width: auto;
+    }
+    .page article.page h2.entry-title, .single article.post h2.entry-title {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+    .page article.post, .single article.post {
+        width: 100%;
+    }
+    .purerecipe.teared ul.ingredients {
+        width: 100%;
+    }
+    .hasImage #recipe-desc {
+        width: 100%;
+    }
+    .rightsb #respond,
+    #respond,
+    .rightsb #comments-list ul.children,
+    #comments-list ul.children {
+        margin-left:0px;
+        margin-right:0px;
+    }
+
+    .template-subtitle { margin-left:0px;}
+    #pattern-container {
+        background: none repeat scroll 0 0 transparent;
+        border-top: 0 none;
+        clear: both;
+        margin: 0 0 0 0;
+        overflow: hidden;
+        padding-top: 20px;
+    }
+    .fcolumn {
+        float: none;
+        width: 100%;
+    }
+    #sidebar .widget {
+        float: none;
+        overflow: hidden;
+        padding: 0 2% 15px;
+        width:100%
+    }
+
+    .flexslider {
+        margin: 0;
+        width: 90%;
+    }
+    .purerecipe.teared #recipe-add-data {
+        position:static;
+        width:auto;
+    }
+    .purerecipe.tearedh .recipe-image, .purerecipe.teared .recipe-image,
+    .purerecipe.teared #recipe-add-data:before { display: none }
+
+    .rightsb .comment-body,
+    .comment-body {
+        float: right;
+        padding: 10px;
+        width: 320px;
+    }
+    .rightsb #comments-list .vcard,
+    #comments-list .vcard {
+        float: left;
+        padding: 15px 10px 10px 0;
+        width: 110px;
+        margin-right:0px;
+        margin-left:0px;
+    }
+    .rightsb #comments-list ul.children .depth-2 .comment-body,
+    #comments-list ul.children .depth-2 .comment-body {
+        width: 320px;
+    }
+    .container { overflow: hidden;}
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #mobile-nav {
+        display:block;
+        margin:0px auto;
+    }
+    .page article.page h2.entry-title, .single article.post h2.entry-title {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+    .fulllay article.post h2.entry-title { font-size: 18px }
+    header h1 {
+        float:none;
+        text-align:center;
+    }
+    #nav ul {
+        display:none;
+    }
+    .container {
+        width: 100%;
+        padding:0px;
+    }
+    .rightsb #primary,
+    #primary {
+        float: none;
+        width: 93%;
+    }
+    .rightsb #content,
+    #content {
+        float: none;
+        margin-left: 00px;
+        width: 100%;
+    }
+    article.post {
+        height: auto;
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 295px;
+    }
+    div.recipe-meta { display:none}
+
+    .footer-widgets {
+        box-shadow:0px;
+    }
+
+    #sidebar {
+        margin: 0 10px 20px 0;
+    }
+    h3#comments-title {
+        margin-left:0px;
+    }
+    .purerecipe.teared:before {
+        display:none;
+    }
+    #articles article.post .entry-content {
+        height: 135px;
+        overflow: hidden;
+    }
+    #sidebar  .widget.socialize {
+        height: auto;
+        width: auto;
+    }
+
+    .page article.post, .single article.post {
+        width: 100%;
+    }
+    .purerecipe.teared ul.ingredients {
+        width: 100%;
+    }
+    .hasImage #recipe-desc {
+        width: 100%;
+    }
+    #respond,
+    #comments-list ul.children {
+        margin-left:0px;
+    }
+    .rightsb #respond {
+        margin-left: 0;
+        margin-right: 0px;
+    }
+    .rightsb #comments-list ul.children {
+        margin-left: 0;
+        margin-right: 0px;
+    }
+
+    .template-subtitle { margin-left:0px;}
+    #pattern-container {
+        background: none repeat scroll 0 0 transparent;
+        border-top: 0 none;
+        clear: both;
+        margin: 0 0 0 0;
+        overflow: hidden;
+        padding-top: 20px;
+    }
+    .fcolumn {
+
+        float: none;
+        width: 100%;
+    }
+    .rightsb #sidebar { margin:0px;}
+    #sidebar .widget {
+        float: none;
+        overflow: hidden;
+        padding: 0 2% 15px;
+        width:100%
+    }
+    #purerecipe-wrapper.elegant {
+        padding:0px;
+    }
+    #recipe-content {
+        padding: 0px 10px 20px;
+    }
+    .purerecipe.elegant #recipe-content {
+        padding: 0 10px 45px;
+    }
+
+    .purerecipe.elegant .recipe-image {display:none;}
+    .purerecipe.tearedh #recipe-add-data,
+    .purerecipe.teared #recipe-add-data {
+        position:static;
+        width:auto;
+    }
+    .purerecipe.tearedh .recipe-image, .purerecipe.teared .recipe-image,
+    .purerecipe.teared #recipe-add-data:before { display: none }
+
+    .rightsb .comment-body,
+    .comment-body {
+        float: none;
+        padding: 10px;
+        width:auto
+    }
+    .rightsb #comments-list .vcard,
+    #comments-list .vcard {
+        float: none;
+        padding: 15px 10px 10px 0;
+        width:auto
+            margin-right:0px;
+    }
+    .rightsb #comments-list ul.children .depth-2 .comment-body,
+    #comments-list ul.children .depth-2 .comment-body {
+        width:auto
+    }
+    .container { overflow: hidden;}
+}
+
+
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+    #mobile-nav {
+        display:block;
+        margin:0px auto;
+    }
+    .page article.page h2.entry-title, .single article.post h2.entry-title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+    header h1 {
+        float:none;
+        text-align:center;
+    }
+    #nav ul {
+        display:none;
+    }
+    .container {
+        width: 100%;
+        padding:0px;
+    }
+    .rightsb #primary,
+    #primary {
+        float: none;
+        width: 93%;
+    }
+    .rightsb #content,
+    #content {
+        float: none;
+        margin-left: 00px;
+        width: 100%;
+    }
+    .fulllay article.post h2.entry-title { font-size: 16px }
+    article.post {
+        height: auto;
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 220px;
+    }
+    div.recipe-meta { display:none}
+    #searchform input#s { width:140px }
+    .footer-widgets {
+        box-shadow:0px;
+    }
+    #sidebar {
+        margin: 0 10px 20px 0;
+    }
+    h3#comments-title {
+        margin-left:0px;
+    }
+    .purerecipe.teared:before {
+        display:none;
+    }
+    #articles article.post .entry-content {
+        height: 135px;
+        overflow: hidden;
+    }
+    #sidebar  .widget.socialize {
+        height: auto;
+        width: auto;
+    }
+
+    .page article.post, .single article.post {
+        width: 100%;
+    }
+    .purerecipe.teared ul.ingredients {
+        width: 100%;
+    }
+    .hasImage #recipe-desc {
+        width: 100%;
+    }
+    #respond,
+    #comments-list ul.children {
+        margin-left:0px;
+    }
+    #comments-list ul.children .depth-2 .comment-body { width: auto;}
+    .footer-widgets {
+        box-shadow:0px 0px 0px #fff;
+    }
+    .template-subtitle { margin-left:0px;}
+    #pattern-container {
+        background: none repeat scroll 0 0 transparent;
+        border-top: 0 none;
+        clear: both;
+        margin: 0 0 0 0;
+        overflow: hidden;
+        padding-top: 20px;
+    }
+    .fcolumn {
+        border-right: 1px solid #DDDDDD;
+        float: none;
+        width: 100%;
+    }
+    #sidebar {margin:0px}
+    .rightsb #sidebar {margin:0px}
+    #sidebar .widget {
+        float: none;
+        overflow: hidden;
+        padding: 0 2% 15px;
+        width:100%
+    }
+
+    .purerecipe.teared #recipe-add-data {
+        position:static;
+        width:auto;
+    }
+    .purerecipe.tearedh .recipe-image, .purerecipe.teared .recipe-image,
+    .purerecipe.teared #recipe-add-data:before { display: none }
+
+    .rightsb .comment-body,
+    .comment-body {
+        float: none;
+        padding: 10px;
+        width: auto;
+    }
+    .rightsb #respond,
+    #respond {
+        margin:0px;
+    }
+    .rightsb #comments-list ul.children .depth-2 .comment-body,
+    #comments-list ul.children .depth-2 .comment-body { width:auto}
+    .rightsb #comments-list ul.children,
+    #comments-list ul.children{ margin:0px;}
+    .rightsb #comments-list .vcard,
+    #comments-list .vcard {
+        float: none;
+        padding: 10px;
+        width: auto;  
+        margin:0px;
+    }
+
+    #comments-list .vcard {
+        float: left;
+        padding: 15px 10px 10px 0;
+        width: 110px;
+        margin-right:0px;
+    }
+
+    .container { overflow: hidden;}
+}
+/*	Retina media query.
+	Overrides styles for devices with a
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+
+    body {
+
+    }
+
+}
+
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+*/
+
+/* For image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+
+
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+*/
+@media print {
+    * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+        -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+    a, a:visited { color: #444 !important; text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+    tr, img {page-break-inside:avoid; 
+             page-break-after:avoid; width:auto; height: 0px;}
+    img { max-width: 100% !important; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3{ page-break-after: avoid; }
+
+    h3#comments-title,
+    #comments-list,
+    #respond,
+    .contentinfo,
+    #primary,
+    img {
+        display: none;  float:none; 
+        width:auto; height: 10px;
+    }
+    #content { float:none;width:auto;}
+}
+
+/** END HTML5 Boilerplate CSS **/
+
+
+/** START Starkers CSS **/
+
+/* LAYOUT */
+/* ----------------------------------------- */
+
+/* These rather presentational classes are generated by WordPress, so it's useful to have some styles for them. Edit as you see fit. More info: http://codex.wordpress.org/CSS */
+.aligncenter { display:block; margin:0 auto }
+.alignleft { float:left }
+.alignright { float:right }
+
+#content p.wp-caption-text {
+    padding:10px 0px;
+}
+.wp-caption.alignleft {
+    margin-left:0px;
+    margin-right:20px;
+}
+.wp-caption.alignright {
+    margin-left:20px;
+    margin-right:0px;
+}
+.wp-caption img {
+    border: 2px solid #ddd
+}
+.wp-caption:hover img {
+    opacity:0.9;
+
+}
+/* You might find the following useful */
+/* div, ul, li { position:relative } This will save you having to declare each div / ul / li's position as 'relative' and allows you to absolutely position elements inside them
+br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 } /* Use this br class to clear your floated columns */
+li#theme-switcher { background:#fff; border:10px solid red; padding:20px; position:fixed; top:0; right:0 } /* Use this if you have the Theme Switcher Reloaded plugin (http://themebot.com/webmaster-tools/1-wordpress-theme-switcher-reloaded) installed and want to make it nice and obvious */
+*/
+/* TYPOGRAPHY */
+/* ----------------------------------------- */
+
+
+h1, h2, h3, h4, h5, h6 { font-weight:bold } /* This helps to identify headings at the initial build stage, so I thought it'd be useful to have it */
+.alert { background:red; color:white } /* 'alert' has a basic style, since it's useful to have it standing out for testing purposes.
+
+
+
+
+*/
+
+/** END Starkers CSS **/
+
+/** START WordPress-Defined CSS Classes **/
+.wp-caption-text{}
+.gallery-caption{}
+.gallery .gallery-icon img {
+    border: 8px solid #FFFFFF !important;
+    box-shadow: 1px 1px 1px #DDDDDD;
+}
+.gallery .gallery-icon a:hover {
+    opacity:0.9
+}
+.gallery-caption {
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: 0;
+    font-family: 'Arial';
+    font-size: 11px;
+    padding: 5px;
+    position: absolute;
+}
+.gallery-item {
+    position:relative;
+}
+.bypostauthor{}
+.sticky{}
+/** END WordPress-Defined CSS Classes **/
+
+
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+*/
+
+.jspContainer
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.jspPane
+{
+    position: absolute;
+}
+
+.jspVerticalBar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 100%;
+    background: red;
+}
+
+.jspHorizontalBar
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.jspCap
+{
+    display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+    float: left;
+}
+
+.jspTrack
+{
+    background: #111;
+    position: relative;
+}
+
+.jspDrag
+{
+    background: #666;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+    float: left;
+    height: 100%;
+}
+
+.jspArrow
+{
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+    cursor: default;
+    background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+    height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+    width: 16px;
+    float: left;
+    height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+    outline: none;
+}
+
+.jspCorner
+{
+    background: #333;
+    float: left;
+    height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+    margin: 0 -3px 0 0;
+}
+
+
+/* CONTACT FORM 7 SPECIFIC STUFF*/
+.addrecipe {
+
+    padding: 15px;
+    border: none;
+
+}
+.addrecipe-form fieldset.error {
+    border-right: 5px double #CF4913
+}
+.addrecipe-form fieldset {
+    background: url("images/recipe/tearedh-bg.png") repeat scroll left top transparent;
+    margin: 0px 0 0;
+    overflow: hidden;
+    padding: 10px 10px 35px 35px;
+    position: relative
+}
+
+.addrecipe-form fieldset span.req {
+    background: url("images/recipe/yellowcard-bg.png") no-repeat scroll right top #FFFF9E;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    display: block;
+    padding: 4px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: auto;
+}
+
+.addrecipe-form #submit {
+    margin:0px;
+    background: url("images/recipe/yellowcard-bg.png") no-repeat scroll right top #FFFF9E;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    float: left;
+}
+
+.addrecipe-form fieldset h4 {
+    padding-top:5px
+}
+.addrecipe-form fieldset label {
+    display: block;
+    float: left;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-left: 10px;
+    padding-top: 4px;
+    width: 20%;
+}
+.addrecipe-form fieldset:last-child {
+    margin: 0;
+}
+
+
+.addrecipe-form fieldset input#title {
+    width:70%;
+}
+.addrecipe-form fieldset input[type="text"]{
+    width: 215px;
+    padding: 5px 8px;
+    font-size: 1.2em;
+    color: #666;
+    border: 1px solid #c7c7c7;
+
+    box-shadow: 0px 2px 6px #E2E2E2 inset
+
+}
+select {
+    padding:5px;
+    border:1px solid #ddd;
+    box-shadow: 0px 2px 6px #E2E2E2 inset
+
+}
+a.move{
+    display: block;
+    height: 20px;
+    text-indent: -9999px;
+    width: 20px;
+    cursor: move;
+}
+a.delete {
+    display: block;
+    height: 16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+#nutritionfacts_list {
+    overflow:hidden;
+}
+#nutritionfacts_list li {
+    background: none ;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 4px 10px;
+}
+#nutritionfacts_list li input {
+
+    background: none repeat scroll 0 0 transparent;
+    border-color: #777777;
+    border-radius: 0 0 0 0;
+    border-style: none none dashed;
+    border-width: 0 0 1px;
+    box-shadow: 0 0 0;
+    margin: 0 3px;
+    padding: 4px;
+    width: 60px;
+}
+#ingridients-sort {
+    border:1px solid #ddd;
+    margin-bottom:30px;
+}
+#ingridients-sort th {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font-weight: normal;
+    padding: 10px;
+    text-align: left;
+}
+tr.ingridients-cont {
+    background:#fff;
+}
+tr.ingridients-cont:nth-child(odd){
+    background:#FAFAFA;
+}
+tr.ingridients-cont.separator {
+    background: #ddd
+}
+tr.ingridients-cont.separator input.notes{
+    display:none;
+}
+
+.ingridients-cont input {
+    background-color: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    border-radius: 3px 3px 3px 3px;
+    padding: 5px;
+    width: 100%;
+}
+
+a.add_separator,
+a.add_ingridient {
+    background: none repeat scroll 0 0 #E2E2E2;
+    border: 1px solid #DDDDDD;
+}
+.addrecipe-form fieldset textarea {
+    width: 430px;
+}
+.addrecipe-form input[type="submit"] {
+    padding: 8px 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #444;
+    border: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+    background-image: -moz-linear-gradient(0 100% 90deg, #fff, #bbb);
+    background: #FFFFFF url('images/grad.jpg') left top repeat-x;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -o-border-radius: 23px;
+    border-radius: 23px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@-webkit-keyframes pulse {
+    0% {
+    -webkit-box-shadow: 0 0 12px rgba(64, 31, 31, 0.2);
+}
+50% {
+    -webkit-box-shadow: 0 0 12px rgba(64, 31, 31, 0.9);
+}
+100% {
+    -webkit-box-shadow: 0 0 12px rgba(64, 31, 31, 0.2);
+}
+}
+.addrecipe-form fieldset input[type="text"]:focus,
+.addrecipe-form fieldset textarea:focus {
+    -webkit-animation: pulse 1.5s infinite ease-in-out;
+}
+.addrecipe-form fieldset input[type="submit"]:hover,
+.addrecipe-form fieldset input[type="submit"]:focus {
+    -webkit-animation: pulse 1.5s infinite ease-in-out;
+}
+
+
+.addrecipe .box-ok-outer,
+#new_post .box-error-outer {
+    display:none;
+}
+.addrecipe .box-ok-outer.show,
+#new_post .box-error-outer.show {
+    display: block;
+}
+#content #new_post .box-error {
+    padding: 0px 7px 7px
+}
+#content #new_post .box-error p {
+    padding-bottom:0px;
+    background-position:5px 10px
+}
+fieldset.submit span {
+    background: url("images/ajax-loader.gif") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: left;
+    height: 24px;
+    margin-left: 15px;
+    margin-top: 5px;
+    text-indent: -9999px;
+    width: 24px;
+}
+
+.loginbox.tabs-content .tab {
+    background: url("images/recipe/tearedh-bg.png") repeat scroll left top transparent;
+    border: none;
+    padding-left:40px;
+}
+.loginbox h3 {
+    padding:5px 0px;
+}
+.loginbox label {
+    display: block;
+    float: left;
+    width: 145px;
+}
+.entry-content .addrecipe ul {
+    list-style:none;
+    padding:0px;
+}
+#login-register-password ul.tabs {
+    margin-left:20px;
+}
+#login-register-password ul.tabs li.active {
+    background: url("images/recipe/yellowcard-bg.png") no-repeat scroll right top #FFFF9E;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.loginbox input{
+    background: url("images/recipe/yellowcard-bg.png") no-repeat scroll right top #fff8c8;
+    padding:5px;
+    border:1px solid #fbdb00
+}
+
+.loginbox input[type="submit"] {
+    padding:10px 20px;
+    border-radius: 24px 24px 24px 24px;
+    font-family: 'Droid Serif';
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 12px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+    margin-top:30px;
+}
+
+#rememberme {
+    margin-right: 10px;
+}
+
+
+
+/* @group Base */
+.chzn-container {
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.chzn-container .chzn-drop {
+    background: #fff;
+    border: 1px solid #aaa;
+    border-top: 0;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    -webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15);
+    -moz-box-shadow   : 0 4px 5px rgba(0,0,0,.15);
+    -o-box-shadow     : 0 4px 5px rgba(0,0,0,.15);
+    box-shadow        : 0 4px 5px rgba(0,0,0,.15);
+    z-index: 1010;
+}
+/* @end */
+
+/* @group Single Chosen */
+.chzn-container-single .chzn-single {
+    background-color: #ffffff;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0 );
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #ffffff), color-stop(50%, #f6f6f6), color-stop(52%, #eeeeee), color-stop(100%, #f4f4f4));
+    background-image: -webkit-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+    background-image: -moz-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+    background-image: -o-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+    background-image: -ms-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+    background-image: linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius   : 5px;
+    border-radius        : 5px;
+    -moz-background-clip   : padding;
+    -webkit-background-clip: padding-box;
+    background-clip        : padding-box;
+    border: 1px solid #aaaaaa;
+    -webkit-box-shadow: 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow   : 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow        : 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 23px;
+    line-height: 24px;
+    padding: 0 0 0 8px;
+    color: #444444;
+    text-decoration: none;
+}
+.chzn-container-single .chzn-default {
+    color: #999;
+}
+.chzn-container-single .chzn-single span {
+    margin-right: 26px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.chzn-container-single .chzn-single abbr {
+    display: block;
+    position: absolute;
+    right: 26px;
+    top: 6px;
+    width: 12px;
+    height: 13px;
+    font-size: 1px;
+    background: url('images/chosen-sprite.png') right top no-repeat;
+}
+.chzn-container-single .chzn-single abbr:hover {
+    background-position: right -11px;
+}
+.chzn-container-single.chzn-disabled .chzn-single abbr:hover {
+    background-position: right top;
+}
+.chzn-container-single .chzn-single div {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 18px;
+}
+.chzn-container-single .chzn-single div b {
+    background: url('images/chosen-sprite.png') no-repeat 0 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.chzn-container-single .chzn-search {
+    padding: 3px 4px;
+    position: relative;
+    margin: 0;
+    white-space: nowrap;
+    z-index: 1010;
+}
+.chzn-container-single .chzn-search input {
+    background: #fff url('images/chosen-sprite.png') no-repeat 100% -22px;
+    background: url('images/chosen-sprite.png') no-repeat 100% -22px, -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+    background: url('images/chosen-sprite.png') no-repeat 100% -22px, -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background: url('images/chosen-sprite.png') no-repeat 100% -22px, -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background: url('images/chosen-sprite.png') no-repeat 100% -22px, -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background: url('images/chosen-sprite.png') no-repeat 100% -22px, -ms-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background: url('images/chosen-sprite.png') no-repeat 100% -22px, linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    margin: 1px 0;
+    padding: 4px 20px 4px 5px;
+    outline: 0;
+    border: 1px solid #aaa;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+.chzn-container-single .chzn-drop {
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius   : 0 0 4px 4px;
+    border-radius        : 0 0 4px 4px;
+    -moz-background-clip   : padding;
+    -webkit-background-clip: padding-box;
+    background-clip        : padding-box;
+}
+/* @end */
+
+.chzn-container-single-nosearch .chzn-search input {
+    position: absolute;
+    left: -9000px;
+}
+
+/* @group Multi Chosen */
+.chzn-container-multi .chzn-choices {
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+    background-image: -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background-image: -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background-image: -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background-image: -ms-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background-image: linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    border: 1px solid #aaa;
+    margin: 0;
+    padding: 0;
+    cursor: text;
+    overflow: hidden;
+    height: auto !important;
+    height: 1%;
+    position: relative;
+}
+.chzn-container-multi .chzn-choices li {
+    float: left;
+    list-style: none;
+}
+.chzn-container-multi .chzn-choices .search-field {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+.chzn-container-multi .chzn-choices .search-field input {
+    color: #666;
+    background: transparent !important;
+    border: 0 !important;
+    font-family: sans-serif;
+    font-size: 100%;
+    /*height: 15px;*/
+    padding: 5px;
+    margin: 1px 0;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow   : none;
+    -o-box-shadow     : none;
+    box-shadow        : none;
+}
+.chzn-container-multi .chzn-choices .search-field .default {
+    color: #999;
+}
+.chzn-container-multi .chzn-choices .search-choice {
+    -webkit-border-radius: 3px;
+    -moz-border-radius   : 3px;
+    border-radius        : 3px;
+    -moz-background-clip   : padding;
+    -webkit-background-clip: padding-box;
+    background-clip        : padding-box;
+    background-color: #e4e4e4;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#eeeeee', GradientType=0 );
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+    background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+    background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+    background-image: -o-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+    background-image: -ms-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+    background-image: linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+    -webkit-box-shadow: 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
+    -moz-box-shadow   : 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
+    box-shadow        : 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
+    color: #333;
+    border: 1px solid #aaaaaa;
+    line-height: 13px;
+    padding: 3px 20px 3px 5px;
+    margin: 3px 0 3px 5px;
+    position: relative;
+    cursor: default;
+}
+.chzn-container-multi .chzn-choices .search-choice-focus {
+    background: #d4d4d4;
+}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+    display: block;
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    width: 12px;
+    height: 13px;
+    font-size: 1px;
+    background: url('images/chosen-sprite.png') right top no-repeat;
+}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover {
+    background-position: right -11px;
+}
+.chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
+    background-position: right -11px;
+}
+/* @end */
+
+/* @group Results */
+.chzn-container .chzn-results {
+    margin: 0 4px 4px 0;
+    max-height: 240px;
+    padding: 0 0 0 4px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.chzn-container-multi .chzn-results {
+    margin: -1px 0 0;
+    padding: 0;
+}
+.chzn-container .chzn-results li {
+    display: none;
+    line-height: 15px;
+    padding: 5px 6px;
+    margin: 0;
+    list-style: none;
+}
+.chzn-container .chzn-results .active-result {
+    cursor: pointer;
+    display: list-item;
+}
+.chzn-container .chzn-results .highlighted {
+    background-color: #3875d7;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3875d7', endColorstr='#2a62bc', GradientType=0 );
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+    background-image: -webkit-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+    background-image: -moz-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+    background-image: -o-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+    background-image: -ms-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+    background-image: linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+    color: #fff;
+}
+.chzn-container .chzn-results li em {
+    background: #feffde;
+    font-style: normal;
+}
+.chzn-container .chzn-results .highlighted em {
+    background: transparent;
+}
+.chzn-container .chzn-results .no-results {
+    background: #f4f4f4;
+    display: list-item;
+}
+.chzn-container .chzn-results .group-result {
+    cursor: default;
+    color: #999;
+    font-weight: bold;
+}
+.chzn-container .chzn-results .group-option {
+    padding-left: 15px;
+}
+.chzn-container-multi .chzn-drop .result-selected {
+    display: none;
+}
+.chzn-container .chzn-results-scroll {
+    background: white;
+    margin: 0 4px;
+    position: absolute;
+    text-align: center;
+    width: 321px; /* This should by dynamic with js */
+    z-index: 1;
+}
+.chzn-container .chzn-results-scroll span {
+    display: inline-block;
+    height: 17px;
+    text-indent: -5000px;
+    width: 9px;
+}
+.chzn-container .chzn-results-scroll-down {
+    bottom: 0;
+}
+.chzn-container .chzn-results-scroll-down span {
+    background: url('images/chosen-sprite.png') no-repeat -4px -3px;
+}
+.chzn-container .chzn-results-scroll-up span {
+    background: url('images/chosen-sprite.png') no-repeat -22px -3px;
+}
+/* @end */
+
+/* @group Active  */
+.chzn-container-active .chzn-single {
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+    -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+    -o-box-shadow     : 0 0 5px rgba(0,0,0,.3);
+    box-shadow        : 0 0 5px rgba(0,0,0,.3);
+    border: 1px solid #5897fb;
+}
+.chzn-container-active .chzn-single-with-drop {
+    border: 1px solid #aaa;
+    -webkit-box-shadow: 0 1px 0 #fff inset;
+    -moz-box-shadow   : 0 1px 0 #fff inset;
+    -o-box-shadow     : 0 1px 0 #fff inset;
+    box-shadow        : 0 1px 0 #fff inset;
+    background-color: #eee;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0 );
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #eeeeee), color-stop(80%, #ffffff));
+    background-image: -webkit-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+    background-image: -moz-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+    background-image: -o-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+    background-image: -ms-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+    background-image: linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+    -webkit-border-bottom-left-radius : 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft : 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius: 0;
+}
+.chzn-container-active .chzn-single-with-drop div {
+    background: transparent;
+    border-left: none;
+}
+.chzn-container-active .chzn-single-with-drop div b {
+    background-position: -18px 1px;
+}
+.chzn-container-active .chzn-choices {
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+    -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+    -o-box-shadow     : 0 0 5px rgba(0,0,0,.3);
+    box-shadow        : 0 0 5px rgba(0,0,0,.3);
+    border: 1px solid #5897fb;
+}
+.chzn-container-active .chzn-choices .search-field input {
+    color: #111 !important;
+}
+/* @end */
+
+/* @group Disabled Support */
+.chzn-disabled {
+    cursor: default;
+    opacity:0.5 !important;
+}
+.chzn-disabled .chzn-single {
+    cursor: default;
+}
+.chzn-disabled .chzn-choices .search-choice .search-choice-close {
+    cursor: default;
+}
+
+/* @group Right to Left */
+.chzn-rtl { text-align: right; }
+.chzn-rtl .chzn-single { padding: 0 8px 0 0; overflow: visible; }
+.chzn-rtl .chzn-single span { margin-left: 26px; margin-right: 0; direction: rtl; }
+
+.chzn-rtl .chzn-single div { left: 3px; right: auto; }
+.chzn-rtl .chzn-single abbr {
+    left: 26px;
+    right: auto;
+}
+.chzn-rtl .chzn-choices .search-field input { direction: rtl; }
+.chzn-rtl .chzn-choices li { float: right; }
+.chzn-rtl .chzn-choices .search-choice { padding: 3px 5px 3px 19px; margin: 3px 5px 3px 0; }
+.chzn-rtl .chzn-choices .search-choice .search-choice-close { left: 4px; right: auto; background-position: right top;}
+.chzn-rtl.chzn-container-single .chzn-results { margin: 0 0 4px 4px; padding: 0 4px 0 0; }
+.chzn-rtl .chzn-results .group-option { padding-left: 0; padding-right: 15px; }
+.chzn-rtl.chzn-container-active .chzn-single-with-drop div { border-right: none; }
+.chzn-rtl .chzn-search input {
+    background: #fff url('images/chosen-sprite.png') no-repeat -38px -22px;
+    background: url('images/chosen-sprite.png') no-repeat -38px -22px, -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+    background: url('images/chosen-sprite.png') no-repeat -38px -22px, -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background: url('images/chosen-sprite.png') no-repeat -38px -22px, -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background: url('images/chosen-sprite.png') no-repeat -38px -22px, -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background: url('images/chosen-sprite.png') no-repeat -38px -22px, -ms-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    background: url('images/chosen-sprite.png') no-repeat -38px -22px, linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+    padding: 4px 5px 4px 20px;
+    direction: rtl;
+}
+/* @end */
+
+
+/* tooltip styling */
+.tooltip {
+    background: url("images/recipe/tearedh-bg.png") repeat scroll 0 0 transparent;
+    color: #000000;
+    padding: 5px 10px 10px 30px;
+    width: 520px;
+    display:none;
+}
+
+/* a .label element inside tooltip */

@@ -1,0 +1,276 @@
+#gallery-exlude li {
+    float:left;
+    margin: 5px;
+    border:1px solid #eee;
+    padding:3px;
+    -moz-box-shadow: 0px 1px 1px 1px #bababa;
+    -webkit-box-shadow: 0px 1px 1px 1px #bababa;
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
+
+    cursor:pointer;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+}
+#gallery-exlude li img {
+    display: block
+}
+#gallery-exlude li.exclude {
+    float:left;
+    -moz-box-shadow: 0px 1px 1px 1px #941313;
+    -webkit-box-shadow: 0px 1px 1px 1px #941313;
+    box-shadow: 0px 1px 1px 1px #941313;
+    border:1px solid #941313; 
+}
+
+#load-gallery {
+    border: 1px solid #5b0a0f;
+    background: #941313;
+    color:#fff;
+    text-shadow: 1px 1px 0px #000;
+    font-weight: bold;
+    font-size: 11px;
+    display: block;
+    padding: 5px 0 9px;
+    text-align:center;
+    margin:10px 20px 0px 0px;
+    text-decoration: none;
+    width:130px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 0 0 #c86666 inset,
+        0px 1px 2px #000,
+        0 -4px 0 #650606 inset;
+    -webkit-box-shadow: 0 1px 0 0 #c86666 inset,
+        0px 1px 2px #000,
+        0 -4px 0 #650606 inset;
+    box-shadow:0 1px 0 0 #c86666 inset,
+        0px 1px 2px #000,
+        0 -4px 0 #650606 inset;
+}
+
+a#load-gallery:hover {
+    opacity:.9;
+    -moz-box-shadow: 0 1px 0 0 #c86666 inset, 0px 1px 2px #8D8D8D;
+    -webkit-box-shadow: 0 1px 0 0 #c86666 inset, 0px 1px 2px #8D8D8D;
+    box-shadow: 0 1px 0 0 #c86666 inset, 0px 1px 2px #8D8D8D;
+    padding:7px 0px;
+}
+
+h4.pp_h4 {
+    font-size:16px;
+    font: Arial,Helvetica,sans-serif;
+    word-spacing: 1px;
+
+}
+h4.pp_h4 span{
+    display: block;
+    font-size:10px;
+    font-weight: normal;
+    padding-top:4px
+}
+
+.pp-gallery-exluder {
+    margin-left:10px;
+
+}
+.pp-upload,
+.pp_select {
+    padding:20px 10px;
+    border-bottom:1px solid #eee;
+
+}
+.pp_select label {
+    width:150px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding-top:5px;
+}
+.pp-upload label {
+    width:150px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding-top:5px;
+}
+.pp-upload #upload_image_button {
+    border: 1px solid #b7b7b7;
+    background: #d1d1d1;
+    color:#444;
+    text-shadow: 1px 1px 0px #fff;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 7px 0 11px;
+    text-align:center;
+    margin:0px 20px 0px 0px;
+    text-decoration: none;
+    width:130px;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 0 1px 0 0 #fff inset,
+        0px 1px 2px #666,
+        0 -4px 0 #909090 inset;
+
+    -webkit-box-shadow: 0 1px 0 0 #fff inset,
+        0px 1px 2px #666,
+        0 -4px 0 #909090 inset;
+    box-shadow:0 1px 0 0 #fff inset,
+        0px 1px 2px #666,
+        0 -4px 0 #909090 inset;
+    cursor: pointer
+}
+.pp-upload #upload_image {
+    padding:10px; width:55%;
+}
+.pp_select span.desc {
+    display: block;
+    margin-top:10px;
+    font-size:10px
+}
+
+#nutritions-table {
+    margin-bottom:20px;
+}
+#featuredphotoid {
+
+}
+input#cookingpressfeaturedphotoid {
+    display: none
+}
+#cookingpressfeaturedphotoid label {
+    float:none;
+    padding-bottom: 10px;
+    width: 400px;
+}
+div#galleryorder {
+    float:right;
+    width:300px;
+}
+div#galleryorderby {
+    float:right;
+    width:300px;
+}
+#cgalleryorderby.pp_select label,
+#galleryorder.pp_select label {
+    float: none;
+    padding-bottom: 10px;
+}
+#new-meta-boxes .inside {
+
+}
+#recipe-drop-area,
+#drop-area {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px dashed #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    min-height: 100px;
+    padding: 10px;
+}
+#recipe-drop-area {
+    width:210px;
+    margin:20px 0px;
+}
+#recipe-drop-area.ui-state-active
+#drop-area.ui-state-active {
+    background: #f7e68f;
+    opacity:0.7
+}
+#recipe-drop-area.loading,
+#drop-area.loading {
+    background-image: url("images/ajax.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#ingridients-sort li {
+
+    padding:4px;
+}
+
+#ingridients-sort  input {
+    padding:5px;
+    width:100%;  
+}
+#ingridients-sort input.notes {
+
+}
+#ingridients-sort  input.ingridient {
+
+}
+
+.action .move {
+
+}
+
+#recipe-meta-boxes .inside h3 {
+    background: none repeat scroll 0 0 transparent;
+    cursor: default;
+    padding-left: 0;
+}
+#recipe-meta-boxes .inside textarea{
+    background: #fff
+}
+.ingridients-cont {
+    background: #F5F5F5
+}
+.ingridients-cont.separator .notes {
+display: none}
+.ingridients-cont.separator {
+   background: #ddd
+}
+.ingridients-cont .delete {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left:20px;
+    margin-top: 5px
+}
+
+
+.ingridients-cont .move {
+    display: block;
+    height: 20px;
+    text-indent: -9999px;
+    width: 20px;
+    cursor: move;
+     margin-top: 5px
+}
+
+#ingridients-sort {
+    margin-bottom: 20px;
+}
+#tagsdiv-level,
+#tagsdiv-serving {
+    display: none;
+}
+#cookingpressphoto label,
+input#cookingpressphoto {
+    display:none
+}
+
+#nutritionfacts_list {
+    overflow: hidden;
+}
+#nutritionfacts_list li {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    margin-right: 10px;
+    padding: 4px 10px;
+}
+
+#nutritionfacts_list li input{
+    border-radius: 0px;
+    background:#eee;
+    margin:0px 3px;
+    border:0px;
+    border-bottom:1px dashed #000;
+    width:60px;
+}

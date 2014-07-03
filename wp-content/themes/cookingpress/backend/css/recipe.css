@@ -1,0 +1,13 @@
+body {
+    background: #eee;
+}
+label {
+    width:120px;
+    float:left;
+}
+
+input {
+    padding:4px;
+    border:1px solid #ddd;
+    box-shadow:1px 1px 0px #000;
+}

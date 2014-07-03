@@ -1,0 +1,438 @@
+
+body {
+    background: url("../images/bg/content-bg.gif") repeat scroll center center #E8E8E8;
+}
+body.rightsb {
+    background: url("../images/bg/content-bg-right.gif") repeat scroll center center #E8E8E8;
+}
+.rightsb #nav ul {
+    background:  #FFFFFF;
+    box-shadow: -1px 1px 0 0 #D6D6D6;
+}
+
+.template-subtitle {
+    background: url("../images/double-line.png") repeat-x scroll center center transparent;
+}
+.template-subtitle span {
+    background: #E8E8E8;
+}
+#nav ul.menu ul { 
+    background:#fff
+}
+
+#nav ul.menu li.active > a {
+    background: #FFFFFF;
+}
+
+#searchform {
+    background:#f0f0ef;
+}
+
+#searchform input#s {
+    background: #F0F0EF;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#searchform input#s:focus {
+    background: #ddd;
+}
+#searchsubmit {
+    background: url("../images/search.png") no-repeat scroll center center #F0F0EF;
+}
+
+/*
+    Articles main page
+*/
+.page.page-template-template-advancedsearch-php article.post,
+.page.page-template-template-grid-php article.post,
+article.post {
+    background: #FFFFFF;
+}
+
+/*#articles article.post.has-thumb  div.recipe-meta {
+    background:  #000000;
+    background: rgba(0,0,0,0.5);
+    color: #BBBBBB;
+}
+#articles article.post  div.recipe-meta {
+    background: #FAFAFA;
+    color: #BBBBBB;
+}*/
+
+.published-time {
+    background: url("../images/double-line.png") repeat-x scroll center transparent;
+}
+
+.page.page-template-template-advancedsearch-php .published-time span,
+.page.page-template-template-excerpt-php .published-time span,
+.page.page-template-template-grid-php .published-time span,
+.published-time span {
+    background:#fff
+}
+article.post h2 a {
+    text-shadow:1px 1px 1px #fff;
+}
+article.post .attachment-post-thumbnail {
+    background: #FFFFFF;
+}
+
+.archive-page li {
+    background: url("../images/li.png") no-repeat scroll left 11px transparent;
+    padding-left: 10px;
+}
+
+/*
+Articles main page - Excerpt mode
+*/
+.exclay article.post {
+    background: #FFFFFF;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.exclay #articles article.post.has-thumb  div.recipe-meta {
+    background: rgba(0, 0, 0, 0.5);
+    background: rgb(0, 0, 0);
+    color: #BBBBBB;
+}
+
+.exclay #articles article.post.no-thumb  div.recipe-meta a {
+    color:#000
+}
+
+/*
+Articles main page - Full mode
+*/
+.fulllay article.post {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fulllay .published-time span { background: #e8e8e8 }
+
+#sidebar h3 {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#sidebar h3 {
+    background:url("../images/double-line.png") repeat-x scroll center center transparent;
+    color: rgba(0, 0, 0, 0.9);
+}
+#sidebar h3 span {
+    background:#fff;
+    padding:0 10px  10px 0px;
+}
+.widget ul li {
+    background: url("../images/li.png") no-repeat scroll left 18px transparent;
+    padding: 7px 0 0 15px;
+}
+
+.widget_archive ul li {
+    color:#888;
+}
+
+.author-bio-box .avatar{
+    background: url("../images/bg/xv.png") repeat scroll left top transparent;
+}
+
+.widget.socialize ul li input {
+    border:1px solid #ddd;
+}
+
+.recentcomments {
+    color:#999
+}
+.recentcomments a {
+    color:#000
+}
+.widget.cookingpress-popular img,
+.widget.cookingpress-recent img {
+    border: 1px solid #EEEEEE;
+}
+
+/*
+single
+*/
+.page .published-time span,
+.single .published-time span {
+    background: #e8e8e8;
+}
+
+img.size-large,
+img.size-full {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#entry-author-info {
+      background: url("../images/double-line.png") repeat-x scroll center top #FAFAFA;
+    box-shadow: 0 0 10px #FFFFFF inset;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#entry-author-info .avatar {
+    background: #DDDDDD;
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+}
+
+.panel-wrapper h2 {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.panel-wrapper p {
+    background: #000;
+}
+
+.panel-wrapper p span {
+    color:#eee;
+    font-style:italic
+}
+
+.panel-wrapper p a{
+    color:#fff;
+}
+
+/* Taxonomies */
+.advsearch-cont {
+    background: url("../images/recipe/teared-bg-top.png") repeat scroll 0 0 transparent;
+    padding-top:20px;
+    border: 1px solid #DDDDDD;
+}
+.advsearch {
+    background: url("../images/recipe/teared-bg.png") repeat scroll 0 0 transparent;
+}
+.advsearch .jspDrag {
+    background: #165FA9;
+}
+.advsearch .jspTrack { background: #fff; }
+
+.advsearch a {
+    color: #333;
+}
+
+.taglist a {
+    color:#165FA9;
+}
+.taglist a.selectedtag {
+    border:1px dashed #d21720;
+}
+.searchcontrols {
+    color: #000;
+}
+
+.searchcontrols a.selected {
+    border: 1px dashed #D21720;
+    border-radius: 46px 46px 46px 46px;
+}
+
+input.searchtags {
+    background: url("../images/search.png") no-repeat scroll 10px center #FFFF9E;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 3px #DDDDDD;
+    color: #000000;
+}
+
+/* Arrow styling */
+.coda-nav-left a, .coda-nav-right a {
+    background: #fff;
+    color: #fff;
+}
+.coda-slider .panel-wrapper {
+    background: #FFFFFF;
+    box-shadow: 2px 0 15px #000000;
+}
+
+.coda-nav {
+    background: #000000;
+}
+
+.coda-nav ul li a {
+    border-bottom: 1px solid #111111;
+    border-top: 1px solid #555555;
+    color: #FFFFFF;
+}
+
+.coda-nav ul li a.current {
+    background: #444;
+}
+
+.coda-slider-wrapper {
+    border: 5px solid #FFFFFF;
+    
+}
+
+.coda-slider {
+    box-shadow: 8px 1px 21px #000000;
+    background: #ebebeb;
+}
+
+
+a.comment-reply-link {
+    color: #888888;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+h3#comments-title {
+    background: url("../images/double-line.png") repeat-x scroll center center transparent;
+}
+h3#comments-title span {
+    background: #E8E8E8;
+}
+li.comment article {
+    border-top: 1px solid #c2c2c2;
+}
+
+#commentform textarea,
+#commentform input {
+    border: 1px solid #ddd;
+    padding:4px;
+}
+input#submit {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 10px 20px;
+    text-transform: none;
+}
+#pattern-container {
+    /*-moz-transform: rotate(2deg);*/
+    background: url("../images/pattern.jpg") repeat scroll left top transparent;
+    border-top: 1px solid #A95B4F;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.footer-widgets {
+    /* -moz-transform: rotate(-2deg);*/
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 0 0 5px #FFFFFF;
+}
+
+.footer-widgets h3 {
+    background: url("../images/double-line.png") repeat-x scroll center transparent;
+}
+.footer-widgets h3 span{
+    background:#fff;
+}
+.fcolumn {
+    border-right: 1px solid #DDDDDD;
+}
+
+#footer-bottom {
+    border-top:1px solid #ddd;
+}
+
+.hr {
+    background: url("../images/double-line.png") repeat-x scroll center center transparent;
+}
+.hr span {
+    padding-left:10px;
+    background: #e8e8e8;
+}
+
+
+/*
+* shortcodes
+*/
+
+
+.tabs-content .tab {
+    border: 1px solid #ddd;
+    background: #fff
+}
+
+ul.tabs li.active {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+}
+
+ul.tabs li a {
+    color:#000;
+    text-shadow: 1px 1px 0px #fff
+}
+
+.wp-caption {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.wp-caption img {
+    border: 2px solid #ddd
+}
+
+
+/*
+* responsive CSS
+*/
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body.rightsb,
+    body {
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body.rightsb,
+    body {
+        width:480px;
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+    .footer-widgets {
+        box-shadow:0px 0px 0px #fff;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    body.rightsb,
+    body {
+        width:295px;
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+    .footer-widgets {
+        box-shadow:0px 0px 0px #fff;
+    }
+
+}
+
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+    body.rightsb,
+    body {
+        width:220px;
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

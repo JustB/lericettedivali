@@ -1,0 +1,691 @@
+
+body {
+    background: url("../images/bg/tileable_wood_texture.png") repeat top left #E8E8E8;
+}
+.bottom {
+    background:#fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.rightsb #nav ul {
+    background:  #FFFFFF;
+    box-shadow: -1px 1px 0 0 #D6D6D6;
+}
+
+.template-subtitle {
+    background: url("../images/double-line.png") repeat-x scroll center center transparent;
+}
+.template-subtitle span {
+    background: #fff;
+}
+#nav ul.menu {
+    background:#fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius:3px;
+}
+#nav ul.menu ul {
+    background:#fff
+}
+
+#nav ul.menu li.active > a {
+    background: #FFFFFF;
+}
+
+#searchform {
+    background:#f0f0ef;
+}
+
+#searchform input#s {
+    background: #F0F0EF;
+}
+#searchsubmit {
+    background: url("../images/search.png") no-repeat scroll center center #F0F0EF;
+}
+header h1 {
+    text-shadow:0px 1px 0px #fff;
+}
+#content {
+    float: right;
+    margin-left: 15px;
+    margin-right: 25px;
+    width: 700px;
+}
+.rightsb #content {
+    float: left;
+    margin-left: 25px;
+    margin-right: 15px;
+    width: 700px;
+}
+#primary {
+    float: left;
+    width: 290px;
+}
+.rightsb #sidebar {
+    margin: 0 20px 30px 10px;
+    padding: 0;
+}
+#sidebar {
+    margin: 0 10px 30px 20px;
+    padding: 0;
+}
+.widget.socialize {
+    height: auto;
+    width: 240px;
+}
+
+body.author #author-info {
+
+    padding: 0 35px;
+}
+body.author #author-desc {
+
+    width: 685px;
+}
+body.author #author-data {
+    width: 240px;
+}
+#author-data h4 {
+    font-size:17px;
+}
+/*
+    Articles main page
+*/
+#articles {
+    margin-top:20px;
+}
+#articles article footer {
+    background: none repeat scroll 0 0 transparent;
+    border-top: 1px dashed #DDDDDD;
+    box-shadow: 0 0 0 #DDDDDD inset;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+article.post {
+    background: #fafafa;
+    box-shadow:0px 0px 0px #fff;
+    width:330px;
+}
+
+#articles article.post.has-thumb footer div.recipe-meta {
+    background:  #000000;
+    background: rgba(0,0,0,0.5);
+    color: #BBBBBB;
+}
+#articles article.post footer div.recipe-meta {
+    background: #FAFAFA;
+    color: #BBBBBB;
+}
+
+.published-time {
+    background: url("../images/double-line.png") repeat-x scroll center transparent;
+}
+
+.published-time span {
+    background:#fafafa
+}
+article.post h2 a {
+    text-shadow:1px 1px 1px #fff;
+}
+article.post .attachment-post-thumbnail {
+    background: #FFFFFF;
+}
+
+.archive-page li {
+    background: url("../images/li.png") no-repeat scroll left 11px transparent;
+    padding-left: 10px;
+}
+
+/*
+Articles main page - Excerpt mode
+*/
+.exclay article.post {
+    background: #FFFFFF;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.exclay #articles article.post footer {
+    border-top:0px;
+    border-bottom:1px solid #DDD
+}
+.exclay #articles article.post.has-thumb footer {
+
+    color: #BBBBBB;
+}
+.exclay #articles .published-time span {
+    background: #fff;
+}
+.exclay #articles article.post.no-thumb footer a {
+    color:#000
+}
+
+/*
+Articles main page - Full mode
+*/
+.fulllay article.post {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fulllay .published-time span { background: #e8e8e8 }
+
+#sidebar h3 {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#sidebar h3 {
+    background:url("../images/double-line.png") repeat-x scroll center center transparent;
+    color: rgba(0, 0, 0, 0.9);
+}
+#sidebar h3 span {
+    background:#fff;
+    padding:0 10px  10px 0px;
+}
+.widget ul li {
+    background: url("../images/li.png") no-repeat scroll left 18px transparent;
+    padding: 7px 0 0 15px;
+}
+
+.widget_archive ul li {
+    color:#888;
+}
+
+.author-bio-box .avatar{
+    background: url("../images/bg/tileable_wood_texture.png") repeat scroll center center #E8E8E8
+}
+
+.widget.socialize ul li input {
+    border:1px solid #ddd;
+}
+
+.recentcomments {
+    color:#999
+}
+.recentcomments a {
+    color:#000
+}
+.widget.cookingpress-popular img,
+.widget.cookingpress-recent img {
+    border: 1px solid #EEEEEE;
+}
+#searchform input#s {
+
+    width: 170px;
+}
+/*
+single
+*/
+.page .published-time span,
+.single .published-time span {
+    background: #fff;
+}
+img.size-large,
+img.size-full {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#entry-author-info {
+    background: #fafafa;
+    border: none;
+}
+#entry-author-info .avatar {
+    background: #eee;
+}
+
+.panel-wrapper h2 {
+    background: #FFFFFF;
+}
+
+.panel-wrapper p {
+    background: #000;
+}
+
+.panel-wrapper p span {
+    color:#eee;
+    font-style:italic
+}
+
+.panel-wrapper p a{
+    color:#fff;
+}
+
+/* Taxonomies */
+
+.advsearch-cont {
+    background: url("../images/recipe/teared-bg-top.png") repeat scroll 0 0 transparent;
+    padding-top:20px;
+    border: 1px solid #DDDDDD;
+}
+.advsearch {
+    background: url("../images/recipe/teared-bg.png") repeat scroll 0 0 transparent;
+}
+.advsearch .jspDrag {
+    background: #165FA9;
+}
+.advsearch .jspTrack { background: #fff; }
+
+.advsearch a {
+    color: #333;
+}
+
+.taglist a {
+    color:#165FA9;
+}
+.taglist a.selectedtag {
+    border:1px dashed #d21720;
+}
+.searchcontrols {
+    color: #000;
+}
+
+.searchcontrols a.selected {
+    border: 1px dashed #D21720;
+    border-radius: 46px 46px 46px 46px;
+}
+
+input.searchtags {
+    background: url("../images/search.png") no-repeat scroll 10px center #FFFF9E;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 3px #DDDDDD;
+    color: #000000;
+}
+
+#nav-below{
+    background: #fff;
+    padding:10px 0px
+}
+
+.page article.post, .single article.post { overflow: visible}
+/* Arrow styling */
+.coda-nav-left a, .coda-nav-right a {
+    background: #fff;
+    color: #fff;
+}
+.coda-slider .panel-wrapper {
+    background: #FFFFFF;
+    box-shadow: 2px 0 15px #000000;
+}
+
+.coda-nav {
+    background: #000000;
+}
+
+.coda-nav ul li a {
+    border-bottom: 1px solid #111111;
+    border-top: 1px solid #555555;
+    color: #FFFFFF;
+}
+
+.coda-nav ul li a.current {
+    background: #444;
+}
+
+.coda-slider-wrapper {
+    border: 5px solid #FFFFFF;
+}
+
+.coda-slider {
+    box-shadow: 8px 1px 21px #000000;
+    background: #ebebeb;
+}
+div.comments {
+    background:#fafafa;
+    margin-top:20px;
+    box-shadow:0 0 4px rgba(0, 0, 0, 0.2)
+}
+
+a.comment-reply-link {
+    color: #888888;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+h3#comments-title {
+    background: url("../images/double-line.png") repeat-x scroll center center transparent;
+    margin:20px 25px 0px
+}
+h3#comments-title span {
+    background: #FAFAFA;
+}
+li.comment article {
+    border-top: none;
+}
+#comments-list {
+    background: none repeat scroll 0 0 #FFFFFF;
+    list-style: none outside none;
+    margin: 25px 25px 15px;
+    padding: 5px 20px 20px;
+    border-radius:3px;
+}
+#comments-list .vcard {
+    margin-right: 20px;
+    padding-top:5px;
+}
+.rightsb #comments-list .vcard {
+    margin-left: 20px;
+    margin-right: 0;
+}
+#comments-list ul.children {
+    margin-left: 100px;
+}
+#comments-list ul.children .depth-2 .comment-body {
+    width: 570px;
+}
+.rightsb #comments-list ul.children .depth-2 .comment-body {
+  width: 430px;
+}
+.comment-body {
+    border: 1px solid #EEEEEE;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 1px #EEEEEE;
+    width: 650px;
+}
+#respond {
+    margin-left: 25px;
+}
+#commentform textarea,
+#commentform input {
+    border: 1px solid #ddd;
+    padding:4px;
+}
+.rightsb #comments-list ul.children {
+  margin-left: 0;
+  margin-right: 215px;
+}
+.rightsb #comments-list ul.children .depth-3 .comment-body {
+  width: 345px;
+}
+.rightsb #respond {
+  margin-left: 30px;
+  margin-right: 325px;
+}
+input#submit {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 10px 20px;
+    text-transform: none;
+}
+#pattern-container {
+    /*-moz-transform: rotate(2deg);*/
+    background: url("../images/pattern.jpg") repeat scroll left top transparent;
+    border-top: 1px solid #A95B4F;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.footer-widgets {
+    /* -moz-transform: rotate(-2deg);*/
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 0 0 5px #FFFFFF;
+}
+
+.footer-widgets h3 {
+    background: url("../images/double-line.png") repeat-x scroll center transparent;
+}
+.footer-widgets h3 span{
+    background:#fff;
+}
+.fcolumn {
+    border-right: 1px solid #DDDDDD;
+}
+#footer-bottom {
+    border-top:1px solid #ddd;
+}
+
+.hr {
+    background: url("../images/double-line.png") repeat-x scroll center center transparent;
+}
+.hr span {
+    padding-left:10px;
+    background: #e8e8e8;
+}
+
+
+/*
+* shortcodes
+*/
+
+
+.tabs-content .tab {
+    border: 1px solid #ddd;
+    background: #fff
+}
+
+ul.tabs li.active {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+}
+
+ul.tabs li a {
+    color:#000;
+    text-shadow: 1px 1px 0px #fff
+}
+
+.wp-caption {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.wp-caption img {
+    border: 2px solid #ddd
+}
+
+
+/*
+* responsive CSS
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1070px) {
+    article.post { width: 295px; }
+    #content {
+        width: 620px;
+    }
+    .comment-body {
+        width: 570px;
+    }
+    #comments-list ul.children .depth-2 .comment-body {
+        width: 490px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body.rightsb,
+    body {
+        padding: 0px;
+        /*  background:#E8E8E8;*/
+    }
+    #sidebar h3 span {
+        background:#fff;
+    }
+    .comment-body { width: 385px; }
+    #comments-list .vcard {
+        margin-right: 5px;
+    }
+    #comments-list ul.children {
+        margin-left: 0px;
+    }
+    #comments-list ul.children .depth-2 .comment-body {
+        width: 390px;
+    }
+    #comments-list {
+        margin: 25px 0 25px 15px;
+    }
+    #primary {
+        float: left;
+        width: 250px;
+    }
+    #sidebar {
+        margin: 0 10px 20px 0;
+    }
+    article.post {
+        width: 210px
+    }
+    #content {
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        width: 455px;
+    }
+    .page article.post, .single article.post {
+        width: auto;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body.rightsb,
+    body {
+        width:480px;
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+    .footer-widgets {
+        box-shadow:0px 0px 0px #fff;
+    }
+    .bottom {
+        background: none;
+        box-shadow:0px 0px 0px
+    }
+    article.post {
+        width: 230px;
+    }
+    #content {
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+    .rightsb #primary, #primary {
+        float: none;
+        width: 93%;
+    }
+    #content {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+    .comment-body { width: 275px; }
+    #comments-list .vcard {
+        margin-right: 5px;
+    }
+    #comments-list ul.children {
+        margin-left: 0px;
+    }
+    #comments-list ul.children .depth-2 .comment-body {
+        width: 275px;
+    }
+    #comments-list {
+
+        margin: 0;
+
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    body.rightsb,
+    body {
+        width:295px;
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+    .footer-widgets {
+        box-shadow:0px 0px 0px #fff;
+    }
+    article.post {
+        background: none repeat scroll 0 0 #FAFAFA;
+        box-shadow: 0 0 0 #FFFFFF;
+        width: auto;
+    }
+    #content {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+    .rightsb #primary, #primary {
+        float: none;
+        width: 93%;
+    }
+
+    .bottom {
+        background: transparent;
+        box-shadow: 0 0 0px
+    }
+    #comments-list {
+
+        margin: 0;
+        padding: 5px;
+    }
+    #comments-list ul.children .depth-2 .comment-body,
+    .comment-body {
+        width: auto;
+    }
+    #comments-list ul.children {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+    body.rightsb,
+    body {
+        width:220px;
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+    article.post {
+        background: none repeat scroll 0 0 #FAFAFA;
+        box-shadow: 0 0 0 #FFFFFF;
+        width: auto;
+    }
+    #content {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+    .rightsb #primary, #primary {
+        float: none;
+        width: 93%;
+    }
+    .bottom {
+        background: transparent;
+        box-shadow: 0 0 0px
+    }
+
+    #comments-list {
+
+        margin: 0;
+        padding: 5px;
+    }
+    #comments-list ul.children .depth-2 .comment-body,
+    .comment-body {
+        width: auto;
+    }
+    #comments-list ul.children {
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

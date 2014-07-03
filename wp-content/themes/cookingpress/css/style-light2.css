@@ -1,0 +1,592 @@
+
+body {
+    background: url("../images/bg/wood-content-bg2.png") repeat scroll center center #E8E8E8;
+}
+body.rightsb {
+    background: url("../images/bg/wood-content-bg2-right.jpg") repeat scroll center center #E8E8E8;
+}
+
+.rightsb #nav ul {
+    background:  #FFFFFF;
+    box-shadow: -1px 1px 0 0 #D6D6D6;
+}
+
+.template-subtitle {
+    background: url("../images/double-line.png") repeat-x scroll center center transparent;
+}
+.template-subtitle span {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #999999;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px;
+}
+
+body.author #author-desc {
+  background: url("../images/recipe/tearedh-bg.png") repeat scroll left top transparent;
+width:650px;
+  padding: 20px 20px 20px 40px;
+
+}
+#nav ul.menu ul { 
+    background:#fff
+}
+
+#nav ul.menu li.active > a {
+    background: #FFFFFF;
+}
+
+#searchform {
+    background:#f0f0ef;
+}
+
+#searchform input#s {
+    background: #F0F0EF;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#searchform input#s:focus {
+    background: #ddd;
+}
+#searchsubmit {
+    background: url("../images/search.png") no-repeat scroll center center #F0F0EF;
+}
+
+/*
+    Articles main page
+*/
+article.page h2.entry-title, article.post h2.entry-title { font-style:italic}
+article.post:nth-child(3n) {
+    background: url("../images/recipe/tearedh-bg-h.png") right top repeat transparent;
+    padding-left: 0;
+    padding-right: 20px;
+    box-shadow:-2px -1px 3px rgba(0,0,0,0.2)
+}
+article.post {
+    background: url("../images/recipe/tearedh-bg.png") left top repeat transparent;
+    box-shadow:0px 0px 0px;
+    padding-left: 20px;
+    width: 320px;
+    box-shadow:2px -1px 3px rgba(0,0,0,0.2)
+}
+.page article.post, .single article.post {
+    background: url("../images/recipe/tearedh-bg-h.png") repeat scroll right center transparent;
+    padding: 20px 50px 20px 30px;
+    width: auto;
+}
+.single article.post.attachment #nav-below,
+.single article.post.attachment {
+    background: none;
+}
+#articles article footer {
+    background: none;
+    box-shadow: 0 0 0px #DDDDDD inset;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+article.post .attachment-post-thumbnail {
+    border: 1px dashed #72acd9;
+    height: auto;
+    margin: 4% 6%;
+    padding: 5px;
+    width: 85%;
+}
+
+.published-time {
+    background: none;
+    text-align:right
+}
+
+.published-time span {
+    background:#fff
+}
+article.post h2 a {
+    text-shadow:1px 1px 1px #fff;
+}
+article.post .attachment-post-thumbnail {
+    background: #FFFFFF;
+}
+
+.archive-page li {
+    background: url("../images/li.png") no-repeat scroll left 11px transparent;
+    padding-left: 10px;
+}
+
+/*
+Articles main page - Excerpt mode
+*/
+.exclay article.post {
+    background: url("../images/recipe/tearedh-bg.png") left top repeat transparent;
+    box-shadow:0px 0px 0px;
+    padding-left: 30px;
+    margin-right:0px;
+    margin-left:0px;
+    width:auto;
+    box-shadow:2px -1px 3px rgba(0,0,0,0.2)
+}
+.exclay article.post.has-thumb .attachment-post-thumbnail {
+  border: 0 none;
+
+  margin: 0;
+  padding: 10px 0 5px;
+
+}
+.exclay #articles article.post.has-thumb  div.recipe-meta {
+    background: rgba(0, 0, 0, 0.5);
+    background: rgb(0, 0, 0);
+    color: #BBBBBB;
+}
+
+.exclay #articles article.post.no-thumb  div.recipe-meta a {
+    color:#000
+}
+
+/*
+Articles main page - Full mode
+*/
+.fulllay article.post {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fulllay .published-time span { background: #e8e8e8 }
+
+#sidebar h3 {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#sidebar h3 {
+    background:url("../images/double-line.png") repeat-x scroll center center transparent;
+    color: rgba(0, 0, 0, 0.9);
+}
+#sidebar h3 span {
+    background:#fff;
+    padding:0 10px  10px 0px;
+}
+.widget ul li {
+    background: url("../images/li.png") no-repeat scroll left 18px transparent;
+    padding: 7px 0 0 15px;
+}
+
+.widget_archive ul li {
+    color:#888;
+}
+
+.author-bio-box .avatar{
+    background: url("../images/bg/xv.png") repeat scroll left top transparent;
+}
+
+.widget.socialize ul li input {
+    border:1px solid #ddd;
+}
+
+.recentcomments {
+    color:#999
+}
+.recentcomments a {
+    color:#000
+}
+.widget.cookingpress-popular img,
+.widget.cookingpress-recent img {
+    border: 1px solid #EEEEEE;
+}
+
+/*
+single
+*/
+.page .published-time span,
+.single .published-time span {
+    background: #fff;
+}
+img.size-large,
+img.size-full {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#nav-below {
+    background:url("../images/recipe/tearedh-bg.png") repeat scroll left top transparent;
+    margin-top:20px;
+    padding-left:30px;
+    box-shadow:0px 0px 0px;
+}
+#entry-author-info {
+    background: #fff;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#entry-author-info .avatar {
+    background: #DDDDDD;
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+}
+
+.panel-wrapper h2 {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.panel-wrapper p {
+    background: #000;
+}
+
+.panel-wrapper p span {
+    color:#eee;
+    font-style:italic
+}
+
+.panel-wrapper p a{
+    color:#fff;
+}
+
+/* Taxonomies */
+
+.advsearch-cont {
+    background: url("../images/recipe/tearedh-bg.png") repeat scroll left top transparent;
+    padding-top:20px;
+    border: 1px solid #DDDDDD;
+}
+.advsearch {
+    background: url("../images/recipe/tearedh-bg.png") repeat scroll left top transparent
+}
+.advsearch .jspDrag {
+    background: #165FA9;
+}
+.advsearch .jspTrack { background: #fff; }
+
+.advsearch a {
+    color: #333;
+}
+
+.taglist a {
+    color:#165FA9;
+}
+.taglist a.selectedtag {
+    border:1px dashed #d21720;
+}
+.searchcontrols {
+    color: #000;
+}
+
+.searchcontrols a.selected {
+    border: 1px dashed #D21720;
+    border-radius: 46px 46px 46px 46px;
+}
+
+input.searchtags {
+    background: url("../images/search.png") no-repeat scroll 10px center #FFFF9E;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 3px #DDDDDD;
+    color: #000000;
+}
+
+#featured {
+    background: url("../images/recipe/tearedh-bg.png") repeat scroll right top transparent;
+}
+/* Arrow styling */
+.coda-nav-left a, .coda-nav-right a {
+    background: #fff;
+    color: #fff;
+}
+.coda-slider .panel-wrapper {
+    background: #FFFFFF;
+    box-shadow: 2px 0 15px #000000;
+}
+
+.coda-nav {
+    background: transparent;
+}
+
+.coda-nav ul li a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px dashed #DDDDDD;
+    border-top: none;
+    color: #000000;
+}
+
+.coda-nav ul li a.current {
+    background: #fff;
+}
+
+.coda-slider-wrapper {
+    border: 5px solid #FFFFFF;
+}
+
+.coda-slider {
+    box-shadow: 0 1px 15px rgba(0,0,0,0.2);
+    background: #ebebeb;
+}
+
+.flexslider { background: none; padding: 10px; }
+a.comment-reply-link {
+    color: #888888;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+h3#comments-title {
+    background: url("../images/recipe/tearedh-bg.png") repeat scroll left top transparent;
+
+    padding:10px;
+}
+h3#comments-title span {
+    background: transparent;
+}
+li.comment article {
+    background: url("../images/recipe/yellowcard-bg.png") no-repeat scroll right top #FFFF9E;
+    border: 1px solid #caca34;
+    border-radius: 0px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 20px;
+    position:relative;
+}
+li.comment.bypostauthor article:before {
+    background: url("../images/recipe/coffe-stain.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 360px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 139px;
+}
+
+#comments-list .vcard {
+    margin-right: 22px;
+}
+#comments-list ul.children {
+    margin-left: 120px;
+}
+.rightsb #comments-list .vcard {
+  
+  margin-right: 0;
+  margin-left: 0;
+}
+.rightsb #comments-list ul.children .depth-2 .comment-body { width: 375px}
+.rightsb #comments-list ul.children .depth-3 .comment-body { width: 290px}
+#comments-list ul.children .depth-2 .comment-body {
+    width: 585px;
+}
+#commentform textarea,
+#commentform input {
+    border: 1px solid #ddd;
+    padding:4px;
+}
+input#submit {
+       background: none repeat scroll 0 0 #FFFFFF;
+    padding: 10px 20px;
+    text-transform: none;
+}
+#pattern-container {
+    /*-moz-transform: rotate(2deg);*/
+    background: url("../images/pattern.jpg") repeat scroll left top transparent;
+    border-top: 1px solid #A95B4F;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.footer-widgets {
+    /* -moz-transform: rotate(-2deg);*/
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 0 0 5px #FFFFFF;
+}
+
+.footer-widgets h3 {
+    background: url("../images/double-line.png") repeat-x scroll center transparent;
+}
+.footer-widgets h3 span{
+    background:#fff;
+}
+.fcolumn {
+    border-right: 1px solid #DDDDDD;
+}
+#footer-bottom {
+    border-top:1px solid #ddd;
+}
+
+.hr {
+    background: url("../images/double-line.png") repeat-x scroll center center transparent;
+}
+.hr span {
+    padding-left:10px;
+    background: #e8e8e8;
+}
+
+
+/*
+* shortcodes
+*/
+
+
+.tabs-content .tab {
+    border: 1px solid #ddd;
+    background: #fff
+}
+
+ul.tabs li.active {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+}
+
+ul.tabs li a {
+    color:#000;
+    text-shadow: 1px 1px 0px #fff
+}
+
+.wp-caption {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.wp-caption img {
+    border: 2px solid #ddd
+}
+
+
+/*
+* responsive CSS
+*/
+@media only screen and (min-width: 992px) and (max-width: 1070px) {
+    article.post { width:300px; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body.rightsb,
+    body {
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+    .comment-body { width: 385px; }
+    #comments-list .vcard {
+        margin-right: 5px;
+    }
+    #comments-list ul.children {
+        margin-left: 0px;
+    }
+    #comments-list ul.children .depth-2 .comment-body {
+        width: 390px;
+    }
+    article.post {
+        height: auto;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 230px;
+        box-shadow:0px 0px 0px;
+        padding: 0px; 
+        background: url("../images/recipe/tearedh-bg-h.png") repeat scroll center top transparent
+    }
+    article.post:nth-child(3n) {
+        padding: 0px;
+        background: url("../images/recipe/tearedh-bg-h.png") repeat scroll center top transparent;
+        box-shadow:0px 0px 0px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body.rightsb,
+    body {
+        width:480px;
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+    .footer-widgets {
+        box-shadow:0px 0px 0px #fff;
+    }
+    .comment-body { width: 275px; }
+    #comments-list .vcard {
+        margin-right: 5px;
+    }
+    #comments-list ul.children {
+        margin-left: 0px;
+    }
+    #comments-list ul.children .depth-2 .comment-body {
+        width: 275px;
+    }
+    article.post {
+        height: auto;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 225px;
+        box-shadow:0px 0px 0px;
+        padding: 0px;
+        background: url("../images/recipe/tearedh-bg-h.png") repeat scroll center top transparent
+    }
+    article.post:nth-child(3n) {
+        padding: 0px;
+        background: url("../images/recipe/tearedh-bg-h.png") repeat scroll center top transparent;
+        box-shadow:0px 0px 0px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    body.rightsb,
+    body {
+        width:295px;
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+    .footer-widgets {
+        box-shadow:0px 0px 0px #fff;
+    }
+    .page article.post, .single article.post {
+        padding: 20px 25px 20px 10px;
+        width: auto;
+    }
+    #recipe-content {
+        padding: 0 10px 20px;
+    }
+    article.post {
+        width:270px
+    }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+    body.rightsb,
+    body {
+        width:220px;
+        padding: 0px;
+        background:#E8E8E8;
+    }
+    #sidebar h3 span {
+        background:#E8E8E8;
+    }
+    article.post {
+        height: auto;
+        margin-bottom: 20px;
+        margin-right: 0px;
+        width: auto;
+        box-shadow:0px 0px 0px;
+        padding: 0px;
+        background: url("../images/recipe/tearedh-bg-h.png") repeat scroll center top transparent
+    }
+    article.post:nth-child(3n) {
+        padding: 0px;
+        background: url("../images/recipe/tearedh-bg-h.png") repeat scroll center top transparent;
+        box-shadow:0px 0px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

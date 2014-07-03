@@ -1,0 +1,94 @@
+/*
++----------------------------------------------------------------+
+|												
+|	WordPress 2.6 Plugin: WP-PageNavi 2.40							
+|	Copyright (c) 2008 Lester "GaMerZ" Chan							
+|												
+|	File Written By:									
+|	- Lester "GaMerZ" Chan									
+|	- http://lesterchan.net									
+|												
+|	File Information:									
+|	- Page Navigation CSS Style								
+|	- wp-content/plugins/wp-pagenavi/pagenavi-css.css					
+|
++----------------------------------------------------------------+
+*/
+
+
+.wp-pagenavi a, .wp-pagenavi a:link {
+    margin: 2px;
+    text-decoration: none;
+    padding:5px;
+
+}
+.wp-pagenavi a:visited {
+    margin: 2px;
+    text-decoration: none;
+    padding:5px;
+}
+.wp-pagenavi a:hover {	
+    padding:5px;
+}
+.wp-pagenavi a:active {
+}
+.wp-pagenavi a.last,
+.wp-pagenavi span.pages {
+
+    font-size: 10px;
+    margin: 2px 20px 2px 2px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.wp-pagenavi span.current {
+    margin: 2px;
+    font-weight: bold;
+    padding:5px;
+}
+.wp-pagenavi span.extend {
+    margin: 2px;
+    padding:5px;
+}
+
+
+
+
+/*  dark */
+.wp-pagenavi {
+    background: url("images/double-line.png") repeat-x scroll center top #FAFAFA;
+    box-shadow: 0 0 10px #FFFFFF inset;
+    clear: both;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 13px 10px 10px;
+    font-size:12px;
+    font-family: "Droid Serif", sans-serif
+}
+.wp-pagenavi a, .wp-pagenavi a:link {
+    text-decoration: none;
+}
+.wp-pagenavi a:visited {
+
+}
+.wp-pagenavi a:hover {
+
+
+}
+.wp-pagenavi a:active {
+
+}
+.wp-pagenavi span.pages {
+    text-decoration: none;
+}
+.wp-pagenavi span.current {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 0 3px #FFFFFF;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.wp-pagenavi span.extend {
+
+    text-decoration: none;
+}
+

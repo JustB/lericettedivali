@@ -1,0 +1,46 @@
+{
+    "name": "justb/lericettedivali",
+    "description": "Repository to build lericettedivali.com",
+    "authors": [
+        {
+            "name": "Giustino Borzacchiello",
+            "email": "giustinob@gmail.com"
+        }
+    ],
+    "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress",
+        "type": "webroot",
+        "version": "3.9.1",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/WordPress/WordPress/archive/3.9.1.zip"
+        },
+        "require" : {
+          "fancyguy/webroot-installer": "1.0.0"
+        }
+      }
+    },
+    {
+        "type":"composer",
+        "url":"http://wpackagist.org"
+    }
+  ],
+    "require": {
+        "php": ">=5.3.0",
+        "wordpress": "3.9.1",
+        "fancyguy/webroot-installer": "1.0.0",
+        "wpackagist-plugin/wordpress-seo": "~1.2",
+        "wpackagist-plugin/ajax-thumbnail-rebuild": "*",
+        "wpackagist-plugin/anti-spam": "*",
+        "wpackagist-plugin/wordpress-importer": "*",
+        "wpackagist-plugin/jetpack": "*",
+        "wpackagist-theme/twentyfourteen": "*"
+    },
+    "extra": {
+    "webroot-dir": "wp",
+    "webroot-package": "wordpress"
+  }
+}

@@ -1,0 +1,1592 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: photopassion\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-19 17:57+0100\n"
+"PO-Revision-Date: 2012-05-20 00:09+0100\n"
+"Last-Translator: rzepak <rzepak@gmail.com>\n"
+"Language-Team: Rzepak <rzepak@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\cookingpress\\wp-content\\themes\\cookingpress\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+#: loop-excerpt.php:29
+#: loop-full.php:31
+#: loop-search.php:134
+msgid "Not Found"
+msgstr "Nie znaleziono"
+
+#: 404.php:18
+msgid "Apologies, but no results were found for the requested archive. Perhaps you'd like to go to home page?"
+msgstr "Przepraszamy, ale nie znaleziono żadnych postów. Może chcesz wrócić na stronę główną?"
+
+#: archive.php:14
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Archwium dzienne: %s"
+
+#: archive.php:16
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Archiwum miesięczne: %s"
+
+#: archive.php:18
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Archiwum roczne: %s"
+
+#: archive.php:20
+msgid "Blog Archives"
+msgstr "Archwium bloga"
+
+#: attachment.php:19
+#, php-format
+msgid "Return to %s"
+msgstr "Powrót do %s"
+
+#: attachment.php:20
+#, php-format
+msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgstr "<span class=\"meta-nav\">&larr;</span> %s"
+
+#: attachment.php:53
+#, php-format
+msgid "By %2$s"
+msgstr "Przez %2$s"
+
+#: attachment.php:64
+#, php-format
+msgid "Published %2$s"
+msgstr "Opublikowane %2$s"
+
+#: attachment.php:74
+#, php-format
+msgid "Full size is %s pixels"
+msgstr "Pełny rozmiar %s pixeli"
+
+#: attachment.php:77
+msgid "Link to full-size image"
+msgstr "Link do pełnego rozmiaru"
+
+#: attachment.php:84
+msgid "Edit"
+msgstr "Edytuj"
+
+#: attachment.php:88
+msgid "Continue reading &rarr;"
+msgstr "Czytaj dalej %rarr;"
+
+#: attachment.php:91
+msgid "Pages:"
+msgstr "Strony:"
+
+#: attachment.php:104
+msgid "Previous image"
+msgstr "Poprzedni obrazek"
+
+#: attachment.php:113
+msgid "Next image"
+msgstr "Następny obrazek"
+
+#: author.php:10
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Archiwum autora: %s"
+
+#: author.php:17
+#, php-format
+msgid "About %s"
+msgstr "O %s"
+
+#: category.php:12
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Archiwum kategorii: %s"
+
+#: coda-slider.php:71
+#: loop-featured.php:16
+#, php-format
+msgid "<span>In</span> %2$s"
+msgstr "<span>W</span> %2$s"
+
+#: comments.php:17
+#, fuzzy
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Ten wpis jest chroniony hasłem. By go zobaczyć, wpisz hasło poniżej:"
+
+#: comments.php:38
+#: comments.php:55
+msgid "&larr; Older Comments"
+msgstr "&larr; Starsze komentarze"
+
+#: comments.php:39
+#: comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr "Nowsze komentarze &rarr;"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "Komentarze są zamknięte."
+
+#: footer.php:36
+msgid "Go to top &uarr;"
+msgstr "Na górę &uarr;"
+
+#: functions.php:139
+msgid "CookingPress"
+msgstr "CookingPress"
+
+#: functions.php:241
+#: functions.php:242
+#: functions.php:255
+msgid "Time needed"
+msgstr "Czas przygotowania"
+
+#: functions.php:243
+msgid "Search Time needed"
+msgstr "Szukaj"
+
+#: functions.php:244
+msgid "Popular Time needed"
+msgstr "Popularne"
+
+#: functions.php:245
+msgid "All Time needed"
+msgstr "Wszystko"
+
+#: functions.php:246
+msgid "Parent Time needed"
+msgstr "Rodzic"
+
+#: functions.php:247
+msgid "Parent Time needed:"
+msgstr "Rodzic"
+
+#: functions.php:248
+msgid "Edit Time needed"
+msgstr "Edytuj"
+
+#: functions.php:249
+msgid "Update Time needed"
+msgstr "Uaktualnij"
+
+#: functions.php:250
+msgid "Add New Time needed"
+msgstr "Dodaj czas przygotowania"
+
+#: functions.php:251
+msgid "New Time needed Name"
+msgstr "Nowa nazwa"
+
+#: functions.php:252
+msgid "Separate time needed with commas"
+msgstr "Oddziel czasy przecinkami"
+
+#: functions.php:253
+msgid "Add or remove time needed"
+msgstr "Dodaj lub usuń"
+
+#: functions.php:254
+msgid "Choose from the most used time needed"
+msgstr "Wybierz z najczęściej wybieranych"
+
+#: functions.php:275
+#: functions.php:289
+msgid "Levels"
+msgstr "Poziomy"
+
+#: functions.php:276
+msgid "Level"
+msgstr "Poziom"
+
+#: functions.php:277
+msgid "Search Levels"
+msgstr "Wyszukaj poziomy"
+
+#: functions.php:278
+msgid "Popular Levels"
+msgstr "Popularne poziomy"
+
+#: functions.php:279
+msgid "All Levels"
+msgstr "Wszystkie poziomy"
+
+#: functions.php:280
+msgid "Parent Level"
+msgstr "Nadrzedny poziom"
+
+#: functions.php:281
+msgid "Parent Level:"
+msgstr "Nadrzędny poziom:"
+
+#: functions.php:282
+msgid "Edit Level"
+msgstr "Edytuj poziom"
+
+#: functions.php:283
+msgid "Update Level"
+msgstr "Uaktualnij poziom"
+
+#: functions.php:284
+msgid "Add New Level"
+msgstr "Dodaj nowy poziom"
+
+#: functions.php:285
+msgid "New Level Name"
+msgstr "Nazwa"
+
+#: functions.php:286
+msgid "Separate levels with commas"
+msgstr "Oddzieln poziomy przecinkami"
+
+#: functions.php:287
+msgid "Add or remove levels"
+msgstr "Dodaj lub usuń poziomy"
+
+#: functions.php:288
+msgid "Choose from the most used levels"
+msgstr "Wybierz z naczęściej używanych"
+
+#: functions.php:310
+#: functions.php:324
+msgid "Servings"
+msgstr "Porcje"
+
+#: functions.php:311
+msgid "Serving"
+msgstr "Porcja"
+
+#: functions.php:312
+msgid "Search Servings"
+msgstr "Wyszukaj porcje"
+
+#: functions.php:313
+msgid "Popular Servings"
+msgstr "Popularne porcje"
+
+#: functions.php:314
+msgid "All Servings"
+msgstr "Wszystkie porcje"
+
+#: functions.php:315
+msgid "Parent Serving"
+msgstr "Nadrzędna porcja"
+
+#: functions.php:316
+msgid "Parent Serving:"
+msgstr "Nadrzędna porcja:"
+
+#: functions.php:317
+msgid "Edit Serving"
+msgstr "Edytuj porcję"
+
+#: functions.php:318
+msgid "Update Serving"
+msgstr "Uaktualnij porcję"
+
+#: functions.php:319
+msgid "Add New Serving"
+msgstr "Dodaj nową porcję"
+
+#: functions.php:320
+msgid "New Serving Name"
+msgstr "Nowa nazwa"
+
+#: functions.php:321
+msgid "Separate servings with commas"
+msgstr "Oddziel przecinkami"
+
+#: functions.php:322
+msgid "Add or remove servings"
+msgstr "Dodaj lub usuń"
+
+#: functions.php:323
+msgid "Choose from the most used servings"
+msgstr "Wybierz z najczęściej używanych"
+
+#: functions.php:343
+#: functions.php:357
+msgid "Food Allergens"
+msgstr "Alergeny"
+
+#: functions.php:344
+msgid "Allergen"
+msgstr "Wszystkie alergeny"
+
+#: functions.php:345
+msgid "Search Allergens"
+msgstr "Wyszukaj alergen"
+
+#: functions.php:346
+msgid "Popular Allergens"
+msgstr "Popularne alergeny"
+
+#: functions.php:347
+msgid "All Allergens"
+msgstr "Wszystkie alergeny"
+
+#: functions.php:348
+msgid "Parent Allergen"
+msgstr "Nadrzędny alergen"
+
+#: functions.php:349
+msgid "Parent Allergen:"
+msgstr "Nadrzędny alergen:"
+
+#: functions.php:350
+msgid "Edit Allergen"
+msgstr "Edytuj alergen"
+
+#: functions.php:351
+msgid "Update Allergens"
+msgstr "Uaktualnij alergen"
+
+#: functions.php:352
+msgid "Add New Allergens"
+msgstr "Dodaj nowy alergen"
+
+#: functions.php:353
+#, fuzzy
+msgid "New Allergens Name"
+msgstr "Nowa nazwa"
+
+#: functions.php:354
+msgid "Separate allergens with commas"
+msgstr "Oddziel poziomy przecinkami"
+
+#: functions.php:355
+#, fuzzy
+msgid "Add or remove allergens"
+msgstr "Dodaj lub usuń poziomy"
+
+#: functions.php:356
+#, fuzzy
+msgid "Choose from the most used allergens"
+msgstr "Wybierz z naczęściej używanych"
+
+#: loop-excerpt.php:31
+#: loop-full.php:33
+#: loop-search.php:136
+#, fuzzy
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Przepraszamy, ale strona której szukasz nie została odnaleziona. Spróbuj skorzystać z wyszukiwarki."
+
+#: loop-excerpt.php:52
+#: loop-excerpt.php:54
+#: loop-search.php:159
+msgid " read more"
+msgstr "więcej"
+
+#: loop-excerpt.php:74
+#: loop-full.php:73
+#: loop-search.php:174
+msgid "&larr; Older posts"
+msgstr "&larr; Starsze wpisy"
+
+#: loop-excerpt.php:75
+#: loop-full.php:74
+#: loop-search.php:175
+msgid "Newer posts &rarr;"
+msgstr "Nowsze wpisy &rarr;"
+
+#: loop-full.php:59
+#, fuzzy
+msgid " Edit"
+msgstr "Edytuj"
+
+#: page.php:31
+#: single.php:58
+#: template-archives.php:58
+#: template-codaslider.php:37
+#: template-flexslider.php:37
+#, php-format
+msgid "View all posts by %s &rarr;"
+msgstr "Zobaczy wszystkie posty napisane przez %s &rarr;"
+
+#: search.php:15
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Wyniki wyszukiwania dla: %s"
+
+#: searchform.php:11
+#, fuzzy
+msgid "Search"
+msgstr "Wyszukaj poziomy"
+
+#: searchformadv.php:26
+#, fuzzy
+msgid "Search term"
+msgstr "Wyszukaj porcje"
+
+#: searchformadv.php:33
+#, fuzzy
+msgid "Select one or more ingredients that should be <strong>included in recipe</strong>"
+msgstr "Wybierz jeden lub więcej składników, i kliknij <em>&ldquo;Szukaj&rdquo;</em>"
+
+#: searchformadv.php:36
+#, fuzzy
+msgid "Recipe needs to have "
+msgstr "Poziom przepisu"
+
+#: searchformadv.php:37
+#, fuzzy
+msgid "Any"
+msgstr "jakikolwiek"
+
+#: searchformadv.php:38
+#, fuzzy
+msgid "All"
+msgstr "wszystkie"
+
+#: searchformadv.php:39
+#, fuzzy
+msgid "of selected ingredients"
+msgstr "z wybranych składników"
+
+#: searchformadv.php:41
+msgid "Select one or more ingredients that should be <strong>excluded from recipe</strong>"
+msgstr "Wybierz jeden lub więcej składników których nie chcesz w przepisie."
+
+#: searchformadv.php:46
+#, fuzzy
+msgid "Choose category"
+msgstr "Kategorie"
+
+#: searchformadv.php:52
+#, fuzzy
+msgid "Choose level"
+msgstr "Wybierz rozmiar slidera"
+
+#: searchformadv.php:61
+#, fuzzy
+msgid "Choose serving"
+msgstr "Wybierz rozmiar slidera"
+
+#: searchformadv.php:70
+#, fuzzy
+msgid "Choose time needed"
+msgstr "Dodaj lub usuń"
+
+#: searchformadv.php:79
+#, fuzzy
+msgid "Choose allergens"
+msgstr "Alergeny"
+
+#: searchformadv.php:82
+msgid "Select..."
+msgstr "Wybierz.."
+
+#: sidebar.php:30
+msgid "Archives"
+msgstr "Archiwa"
+
+#: sidebar.php:37
+msgid "Meta"
+msgstr "Meta"
+
+#: sidebar.php:100
+#, fuzzy
+msgid "Shortlink:"
+msgstr "Skrócony link"
+
+#: single.php:79
+msgid "&larr; Previous post"
+msgstr "&larr; Poprzedni wpis"
+
+#: single.php:96
+msgid "Next post &rarr;"
+msgstr "Następny wpis &rarr;"
+
+#: template-anonpost.php:131
+#, fuzzy
+msgid "Recipe Title:"
+msgstr "Tytuł przepisu"
+
+#: template-anonpost.php:135
+msgid " Title is required!"
+msgstr "Tytuł jest wymagany"
+
+#: template-anonpost.php:140
+#: template-anonpost.php:223
+#: template-anonpost.php:244
+#, fuzzy
+msgid "Required"
+msgstr "(wymagany)"
+
+#: template-anonpost.php:146
+msgid "Post Content:"
+msgstr "Treść wpisu"
+
+#: template-anonpost.php:163
+#, fuzzy
+msgid "Category:"
+msgstr "Kategorie"
+
+#: template-anonpost.php:169
+#, fuzzy
+msgid "Short summary:"
+msgstr "Krótkie podsumowanie przepisu"
+
+#: template-anonpost.php:191
+msgid "Ingredients:"
+msgstr "Składniki"
+
+#: template-anonpost.php:202
+msgid "Name of ingriedient"
+msgstr "Nazwa składnika"
+
+#: template-anonpost.php:203
+msgid "Notes (quantity, additional info)"
+msgstr "Dodatkowe (ilość, typ, itd itp)"
+
+#: template-anonpost.php:204
+#, fuzzy
+msgid "Actions"
+msgstr "Opcje"
+
+#: template-anonpost.php:214
+msgid "Delete"
+msgstr "Usuń"
+
+#: template-anonpost.php:221
+msgid "Add new ingridient"
+msgstr "Dodaj nowy składnik"
+
+#: template-anonpost.php:222
+msgid "Add separator"
+msgstr "Dodaj separator"
+
+#: template-anonpost.php:227
+msgid "Instructions:"
+msgstr "Sposób przygotowania"
+
+#: template-anonpost.php:248
+#, fuzzy
+msgid "Additional informations:"
+msgstr "Informacje o przepisie:"
+
+#: template-anonpost.php:250
+#, fuzzy
+msgid "Preparation time "
+msgstr "Czas przygotowania tego przepisu to"
+
+#: template-anonpost.php:250
+#: template-anonpost.php:251
+msgid "minutes"
+msgstr "minut"
+
+#: template-anonpost.php:251
+#, fuzzy
+msgid "Cooking time "
+msgstr "Czas gotowania:"
+
+#: template-anonpost.php:252
+msgid "Yield:"
+msgstr "Wynik:"
+
+#: template-anonpost.php:267
+#, fuzzy
+msgid "Servings:"
+msgstr "Porcje"
+
+#: template-anonpost.php:277
+#, fuzzy
+msgid "Levels:"
+msgstr "Poziomy"
+
+#: template-anonpost.php:287
+#, fuzzy
+msgid "Time needed:"
+msgstr "Czas przygotowania"
+
+#: template-anonpost.php:300
+#, fuzzy
+msgid "Post Review"
+msgstr "ocenach"
+
+#: template-anonpost.php:301
+msgid "Loading"
+msgstr "Trwa ładowanie"
+
+#: template-archives.php:31
+msgid "Archives by Title:"
+msgstr "Archiwa według tytułu:"
+
+#: template-archives.php:37
+msgid "Archives by Month:"
+msgstr "Archiwa według miesięcy:"
+
+#: template-archives.php:42
+msgid "Archives by Subject:"
+msgstr "Archiwa według tematu:"
+
+#: template-regpost.php:355
+msgid "Username"
+msgstr "Użytkownik"
+
+#: template-regpost.php:359
+msgid "Your Email"
+msgstr "Twój email"
+
+#: template-regpost.php:364
+msgid "Sign up!"
+msgstr "Zapisz się!"
+
+#: template-regpost.php:376
+msgid "Username or Email"
+msgstr "Nick lub email"
+
+#: template-regpost.php:381
+msgid "Reset my password"
+msgstr "Resetuj moje hasło"
+
+#: template-regpost.php:403
+msgid "Admin"
+msgstr "Admin"
+
+#: template-regpost.php:404
+msgid "Profile"
+msgstr "Profil"
+
+#: backend/purepress-core.php:133
+#, fuzzy
+msgid "Options Panel"
+msgstr "Opcje"
+
+#: backend/purepress-core.php:135
+#: backend/purepress-core.php:145
+msgid "Save changes"
+msgstr "Zapisz zmiany"
+
+#: backend/purepress-core.php:150
+msgid "You can reset ALL settings and delete theme related options, by pressing button below:"
+msgstr "Możesz usunać wszystkie opcje klikając poniższy przycisk:"
+
+#: backend/purepress-functions.php:22
+msgid "Options"
+msgstr "Opcje"
+
+#: backend/purepress-functions.php:273
+msgid "<span>0</span> "
+msgstr "<span>0</span>"
+
+#: backend/purepress-functions.php:273
+msgid "<span>1</span> "
+msgstr "<span>1 </span>"
+
+#: backend/purepress-functions.php:273
+msgid "<span>%</span> "
+msgstr "<span>%</span>"
+
+#: backend/purepress-functions.php:327
+#, php-format
+msgid "<li class=\"date\"><span>On:</span> <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a></li>"
+msgstr "<li class=\"date\"><span>Dnia:</span> <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a></li>"
+
+#: backend/purepress-functions.php:351
+#, fuzzy
+msgid "<span>No Comments.</span> "
+msgstr "<span>Żadnych komentarzy</span>"
+
+#: backend/purepress-functions.php:351
+#, fuzzy
+msgid "<span>1 Comment</span> "
+msgstr "<span>1 komentarz</span>"
+
+#: backend/purepress-functions.php:351
+#, fuzzy
+msgid "<span>Comments (%)</span> "
+msgstr "<span>Komentarzy (%)</span>"
+
+#: backend/purepress-functions.php:692
+msgid "Your comment is awaiting moderation."
+msgstr "Twój komentarz czeka na moderację."
+
+#: backend/purepress-functions.php:699
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">powiedział:</span>"
+
+#: backend/purepress-functions.php:703
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s na %2$s"
+
+#: backend/purepress-functions.php:704
+#: backend/purepress-functions.php:714
+#, fuzzy
+msgid "(Edit)"
+msgstr "Edytuj"
+
+#: backend/purepress-functions.php:714
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: backend/purepress-functions.php:756
+msgid "This post is password protected. To view it please enter your password below:"
+msgstr "Ten wpis jest chroniony hasłem. By go zobaczyć, wpisz hasło poniżej:"
+
+#: backend/purepress-functions.php:767
+msgid "Image"
+msgstr "Obrazek"
+
+#: backend/purepress-metaboxes.php:16
+msgid "Which Post Sidebar?"
+msgstr "Który pasek boczny chcesz wybrać?"
+
+#: backend/purepress-metaboxes.php:19
+#, fuzzy
+msgid "Choose which sidebar you want to show"
+msgstr "Wybierz który pasek boczny zostanie przyporządkowany do wpisu"
+
+#: backend/purepress-metaboxes.php:24
+msgid "Generate shortcode for gallery"
+msgstr "Generuj shorcode dla galerii"
+
+#: backend/purepress-metaboxes.php:34
+msgid "Recipe title"
+msgstr "Tytuł przepisu"
+
+#: backend/purepress-metaboxes.php:36
+msgid "It's neccessery for google rich snippet to put Title of recipe here, if empty - post title will be used"
+msgstr "Google rich snippets wymagają podania tytułu, jeśli zostawisz to pole puste zostanie uzyty tytuł wpisu"
+
+#: backend/purepress-metaboxes.php:41
+msgid "Recipe Theme"
+msgstr "Szablon przepisu"
+
+#: backend/purepress-metaboxes.php:49
+msgid "Choose if want to show sidebar next to post content"
+msgstr "Wybierz czy chcesz pokazać sidebar obok treści"
+
+#: backend/purepress-metaboxes.php:54
+#: backend/purepress-metaboxes.php:56
+msgid "Short summary of recipe"
+msgstr "Krótkie podsumowanie przepisu"
+
+#: backend/purepress-metaboxes.php:61
+#, fuzzy
+msgid "Ingredients"
+msgstr "Składniki"
+
+#: backend/purepress-metaboxes.php:67
+msgid "Instructions"
+msgstr "Sposób przygotowania"
+
+#: backend/purepress-metaboxes.php:73
+msgid "Recipe options"
+msgstr "Opcje przepisu"
+
+#: backend/purepress-metaboxes.php:79
+#, fuzzy
+msgid "Nutrition facts"
+msgstr "Informacje odżywcze"
+
+#: backend/purepress-metaboxes.php:88
+msgid "How many servings"
+msgstr "Ile porcji"
+
+#: backend/purepress-metaboxes.php:93
+msgid "Difficulty level"
+msgstr "Poziom trudności"
+
+#: backend/purepress-metaboxes.php:95
+msgid "Select skill level required to use this recipe"
+msgstr "Wybierz poziom umiejętności wymagany do wykonania przepisu"
+
+#: backend/purepress-metaboxes.php:100
+msgid "Photo"
+msgstr "Zdjęcie"
+
+#: backend/purepress-metaboxes.php:186
+msgid "Order"
+msgstr "Porządkuj"
+
+#: backend/purepress-metaboxes.php:188
+msgid "Ascending"
+msgstr "Rosnąco"
+
+#: backend/purepress-metaboxes.php:189
+msgid "Descending"
+msgstr "Malejąco"
+
+#: backend/purepress-metaboxes.php:193
+msgid "Order images by:"
+msgstr "Uporządkuj zdjęcia po:"
+
+#: backend/purepress-metaboxes.php:195
+msgid "Menu order"
+msgstr "Porządek menu"
+
+#: backend/purepress-metaboxes.php:196
+#: backend/purepress-widgets.php:102
+msgid "Title"
+msgstr "Tytuł"
+
+#: backend/purepress-metaboxes.php:197
+msgid "Date/Time"
+msgstr "Data/czas"
+
+#: backend/purepress-metaboxes.php:198
+msgid "Random"
+msgstr "Losowo"
+
+#: backend/purepress-metaboxes.php:202
+msgid "Copy text from input above and paste it in Post Editor where you want to show gallery."
+msgstr "Skopiuj text z powyższego inputa i wklej w edytorze wpisu w miejscu w którym chcesz pokazać galerię."
+
+#: backend/purepress-metaboxes.php:229
+#, fuzzy
+msgid "Select photos you want to exclude from post <span>Excluded photos will have red border around them</span><span>You need to save post as a draft to see attached photos</span>"
+msgstr "Wybierz zdjęcia które chcesz wykluczyć z wpisu <span>Wybrane zdjęcia będą otoczone czerwoną ramką</span>"
+
+#: backend/purepress-metaboxes.php:300
+#: backend/purepress-metaboxes.php:322
+#, fuzzy
+msgid "None"
+msgstr "Nie"
+
+#: backend/purepress-metaboxes.php:311
+msgid " You can manage Servings options here"
+msgstr "Zarządzaj opcjami"
+
+#: backend/purepress-metaboxes.php:378
+#, fuzzy
+msgid "Drag photo from thumbnails to set Recipe photo (if you don't do that, Post Thumbnail will be used) "
+msgstr "Przeciągnij zdjęcie z miniaturek by ustawić Miniaturkę przepisu"
+
+#: backend/purepress-metaboxes.php:379
+msgid "You need to save post as a draft if you can't see attached photos"
+msgstr "Musisz zapisać wpis jako szkic żeby zobaczyć dołączone zdjęcia"
+
+#: backend/purepress-metaboxes.php:380
+msgid "Drop photo here"
+msgstr "Upuść zdjęcie tutaj"
+
+#: backend/purepress-metaboxes.php:382
+msgid "Remove photo"
+msgstr "Usuń zdjęcie"
+
+#: backend/purepress-metaboxes.php:393
+msgid "Recipe informations:"
+msgstr "Informacje o przepisie:"
+
+#: backend/purepress-metaboxes.php:394
+msgid "Filling this form is optional, empty fields won't be used in post. Put time in minutes, it will be converted to hours or days if neccessery"
+msgstr "Uzupełnieni tego formularza jest opcjonalne, puste pola nie będą użyte. Czas podawaj w minutach, zostanie odpowiednio przekonwertowany"
+
+#: backend/purepress-metaboxes.php:395
+msgid "Preparation time for this recipe is "
+msgstr "Czas przygotowania tego przepisu to"
+
+#: backend/purepress-metaboxes.php:401
+msgid " and cooking time takes"
+msgstr "gotowanie zabiera"
+
+#: backend/purepress-metaboxes.php:407
+msgid "Yield is"
+msgstr "Ilość to"
+
+#: backend/purepress-metaboxes.php:421
+#, fuzzy
+msgid "Recipe facts:"
+msgstr "Informacje o przepisie:"
+
+#: backend/purepress-metaboxes.php:492
+msgid "move"
+msgstr "przesuń"
+
+#: backend/purepress-options.php:17
+#, fuzzy
+msgid "General Options"
+msgstr "Opcje"
+
+#: backend/purepress-options.php:19
+msgid "Upload Logo"
+msgstr "Wyślij logo"
+
+#: backend/purepress-options.php:20
+msgid "Leave empty to use text (Site Title will be used)"
+msgstr "Zostaw puste by użyć nazwy bloga jak tekst"
+
+#: backend/purepress-options.php:24
+msgid "Set width of logo<br/><small>(only if it won't show automatically)</small>"
+msgstr "Ustaw logo "
+
+#: backend/purepress-options.php:26
+msgid "Theme in most cases will get logo size by getimagesize() function in PHP, but some hosting doesn't allow it, then you have to put width  here"
+msgstr ""
+
+#: backend/purepress-options.php:29
+#, fuzzy
+msgid "Set height of logo<br/><small>(only if it won't show automatically)</small>"
+msgstr "Ustaw wysokość wpisów na głównej stronie <br/><small>(pozostaw puste dla wartości domyślnej)</small>"
+
+#: backend/purepress-options.php:31
+msgid "Theme in most cases will get logo size by getimagesize() function in PHP, but some hosting doesn't allow it, then you have to put height here"
+msgstr ""
+
+#: backend/purepress-options.php:34
+msgid "Show blog description?"
+msgstr "Pokaż opis bloga."
+
+#: backend/purepress-options.php:35
+msgid "Choose Yes to show Tagline, you can set it in General Settings)"
+msgstr "Wybierz Tak żeby pokazać podpis"
+
+#: backend/purepress-options.php:43
+msgid "Choose colour scheme"
+msgstr "Wybierz schemat kolorów"
+
+#: backend/purepress-options.php:54
+msgid "Choose sidebar position"
+msgstr "Wybierz pozycje paska bocznego"
+
+#: backend/purepress-options.php:55
+msgid "Choose layout position"
+msgstr "Wybierz pozycje layoutu"
+
+#: backend/purepress-options.php:58
+msgid "Left sidebar"
+msgstr "Lewy sidebar"
+
+#: backend/purepress-options.php:59
+msgid "Right sidebar"
+msgstr "Prawy sidebar"
+
+#: backend/purepress-options.php:63
+msgid "Choose homepage posts version"
+msgstr "Wybierz wersję postów na stronie głównej"
+
+#: backend/purepress-options.php:64
+#: backend/purepress-options.php:140
+msgid "Choose layout version"
+msgstr "Wybierz layout"
+
+#: backend/purepress-options.php:67
+msgid "Thumbs grid"
+msgstr "Układ miniaturek"
+
+#: backend/purepress-options.php:68
+msgid "Excerpt mode"
+msgstr "Skróty"
+
+#: backend/purepress-options.php:69
+msgid "Full text mode"
+msgstr "Pełne posty"
+
+#: backend/purepress-options.php:79
+msgid "Copyrights in footer"
+msgstr "Copyrights w stopce"
+
+#: backend/purepress-options.php:80
+msgid "Text displayed under the footer widgets area."
+msgstr "Tekst wyświetlany pod widżetami stopki"
+
+#: backend/purepress-options.php:86
+msgid "Posts and Albums Options"
+msgstr "Ustawienia wpisu"
+
+#: backend/purepress-options.php:89
+msgid "Show author info under post and page?"
+msgstr "Pokaż informacje o autorze pod postem"
+
+#: backend/purepress-options.php:93
+msgid "Yes, show it"
+msgstr "Tak, pokaż."
+
+#: backend/purepress-options.php:94
+msgid "No, hide it"
+msgstr "Nie, schowaj"
+
+#: backend/purepress-options.php:98
+#, fuzzy
+msgid "Home page post meta - show informations like comments number, tags etc. below post"
+msgstr "Dane meta wpisu - informacje typu ilość komentarzy, tagi, kateogrie itd"
+
+#: backend/purepress-options.php:101
+msgid "Recipe Time"
+msgstr "Czas przepisu"
+
+#: backend/purepress-options.php:102
+#, fuzzy
+msgid "Recipe Ratings"
+msgstr "Opcje przepisu"
+
+#: backend/purepress-options.php:103
+msgid "Recipe Servings"
+msgstr "Porcje przepisu"
+
+#: backend/purepress-options.php:104
+msgid "Recipe level"
+msgstr "Poziom przepisu"
+
+#: backend/purepress-options.php:106
+#: backend/purepress-options.php:117
+msgid "Author"
+msgstr "Autor"
+
+#: backend/purepress-options.php:107
+#: backend/purepress-options.php:118
+msgid "Categories"
+msgstr "Kategorie"
+
+#: backend/purepress-options.php:108
+#: backend/purepress-options.php:119
+msgid "Tags"
+msgstr "Tagi"
+
+#: backend/purepress-options.php:109
+#: backend/purepress-options.php:120
+msgid "Comments"
+msgstr "Komentarze"
+
+#: backend/purepress-options.php:113
+#, fuzzy
+msgid "Single post meta - show informations like comments number, tags etc. below post"
+msgstr "Dane meta wpisu - informacje typu ilość komentarzy, tagi, kateogrie itd"
+
+#: backend/purepress-options.php:116
+msgid "Date"
+msgstr "Data"
+
+#: backend/purepress-options.php:126
+#, fuzzy
+msgid "Recipe configuration"
+msgstr "Informacje o przepisie:"
+
+#: backend/purepress-options.php:128
+#, fuzzy
+msgid "Search configuration"
+msgstr "Informacje o przepisie:"
+
+#: backend/purepress-options.php:131
+#, fuzzy
+msgid "Category"
+msgstr "Kategorie"
+
+#: backend/purepress-options.php:135
+#, fuzzy
+msgid "Allergens"
+msgstr "Wszystkie alergeny"
+
+#: backend/purepress-options.php:139
+msgid "Recipe microformat"
+msgstr "Mikroformat przepisu"
+
+#: backend/purepress-options.php:143
+msgid "hRecipe"
+msgstr ""
+
+#: backend/purepress-options.php:144
+msgid "Schema.org"
+msgstr ""
+
+#: backend/purepress-options.php:148
+#, fuzzy
+msgid "Add recipe to post automatically?"
+msgstr "Dodaj przepis automatycznie?"
+
+#: backend/purepress-options.php:149
+#: backend/purepress-options.php:173
+msgid "If recipe form is filled, shortcode with recipe will be added at the end of post"
+msgstr "Jeśli formularz przepisu jest uzupełniony, shortcode zostanie dodany na koniec wpisu"
+
+#: backend/purepress-options.php:152
+#: backend/purepress-options.php:161
+#: backend/purepress-options.php:177
+msgid "No"
+msgstr "Nie"
+
+#: backend/purepress-options.php:153
+#: backend/purepress-options.php:162
+#: backend/purepress-options.php:176
+msgid "Yes"
+msgstr "Tak"
+
+#: backend/purepress-options.php:157
+msgid "Add tooltips to recipe?"
+msgstr "Dodaj dymki do przepisu?"
+
+#: backend/purepress-options.php:158
+msgid "If tag has description and optional image it will be shown in tooltip on recipe list"
+msgstr "Jeśli tag ma opis i opcjonalny obrazek, będą one pokazane na przepisie jako dymki"
+
+#: backend/purepress-options.php:166
+#, fuzzy
+msgid "Nutrition facts configuration"
+msgstr "Informacje odżywcze"
+
+#: backend/purepress-options.php:168
+msgid "Configure your nutrition facts lists"
+msgstr "Konfiguruj liste faktów"
+
+#: backend/purepress-options.php:172
+msgid "Add post content in 'Add recipe' form?"
+msgstr "Dodaj miejsce na treść postu w formularzu Dodawnia "
+
+#: backend/purepress-options.php:181
+msgid "'Recipe add' template - success text"
+msgstr "\"Dodaj przepis\" - informacja o powodzeniu"
+
+#: backend/purepress-options.php:182
+#: backend/purepress-options.php:188
+#: backend/purepress-options.php:194
+#, fuzzy
+msgid "Text displayed after recipe was added"
+msgstr "Tekst wyświetlany pod widżetami stopki"
+
+#: backend/purepress-options.php:187
+msgid "'Recipe add' template - ingridients error text"
+msgstr "\"Dodaj tekst\" - błąd "
+
+#: backend/purepress-options.php:193
+msgid "'Recipe add' template - instructions error text"
+msgstr "Dodawanie przepisu - brakująca instrukcja"
+
+#: backend/purepress-options.php:225
+msgid "Colour Options"
+msgstr "Opcje kolorów"
+
+#: backend/purepress-options.php:227
+msgid "Choose fonts family?"
+msgstr "Wybierz rodzine czcionek"
+
+#: backend/purepress-options.php:228
+msgid "Default is Droid"
+msgstr "Domyślnie jest to Droid"
+
+#: backend/purepress-options.php:237
+#, fuzzy
+msgid "Choose font for Recipe?"
+msgstr "Wybierz rodzine czcionek"
+
+#: backend/purepress-options.php:254
+#, fuzzy
+msgid "Footer background?"
+msgstr "Tło strony"
+
+#: backend/purepress-options.php:268
+msgid "Custom CSS"
+msgstr "Własny CSS"
+
+#: backend/purepress-options.php:269
+msgid "You can put here custom CSS, it will help to keep your changes after updating theme."
+msgstr "Własne zmiany w CSSie trzymaj w tym polu, by uniknąć problemów podczas aktualizacji szablonu"
+
+#: backend/purepress-options.php:273
+msgid "Apply custom colours?"
+msgstr "Zastosować własne kolory?"
+
+#: backend/purepress-options.php:274
+msgid "Select Yes to apply custom colours"
+msgstr "Wybierz Tak żeby zastosować własne kolory"
+
+#: backend/purepress-options.php:282
+#, fuzzy
+msgid "Page Full Background"
+msgstr "Tło strony"
+
+#: backend/purepress-options.php:287
+msgid "Page Background (with white sidebar)"
+msgstr "Tło strony"
+
+#: backend/purepress-options.php:292
+msgid "Background of Footer area"
+msgstr "Tło stopki"
+
+#: backend/purepress-options.php:297
+#, fuzzy
+msgid "Menu background"
+msgstr "Tło strony"
+
+#: backend/purepress-options.php:302
+#, fuzzy
+msgid "Menu hover background"
+msgstr "Tło strony"
+
+#: backend/purepress-options.php:307
+msgid "Menu text color"
+msgstr "Kolor menu"
+
+#: backend/purepress-options.php:314
+msgid "Social widget"
+msgstr "Widget społeczny"
+
+#: backend/purepress-options.php:316
+msgid "Enable social widget?"
+msgstr "Włączy widget społeczny?"
+
+#: backend/purepress-options.php:317
+#, fuzzy
+msgid "Select Yes to turn it on"
+msgstr "Wybierz Tak żeby zastosować własne kolory"
+
+#: backend/purepress-options.php:325
+msgid "Title of widget"
+msgstr "Tytuł widgetu"
+
+#: backend/purepress-options.php:327
+msgid "Just a title"
+msgstr "Tytuł"
+
+#: backend/purepress-options.php:330
+msgid "Social elements:"
+msgstr "Elementy społecznościowe"
+
+#: backend/purepress-options.php:333
+#, fuzzy
+msgid "Twitter"
+msgstr "Tytuł"
+
+#: backend/purepress-options.php:334
+msgid "Facebook"
+msgstr "Facebook"
+
+#: backend/purepress-options.php:335
+msgid "Google Plus"
+msgstr ""
+
+#: backend/purepress-options.php:336
+#, fuzzy
+msgid "Pinterest"
+msgstr "minut"
+
+#: backend/purepress-options.php:337
+msgid "Shortlink"
+msgstr "Skrócony link"
+
+#: backend/purepress-options.php:341
+msgid "Facebook App ID"
+msgstr ""
+
+#: backend/purepress-options.php:343
+msgid "You need to create facebook aplication to be able to share, paste here ID of it"
+msgstr "Musisz podać ID aplikacji Facebookowej "
+
+#: backend/purepress-options.php:485
+#: backend/purepress-options.php:512
+msgid "Help"
+msgstr "Pomoc"
+
+#: backend/purepress-options.php:523
+msgid "Important"
+msgstr "Ważne"
+
+#: backend/purepress-options.php:532
+msgid "Name"
+msgstr "Nazwa"
+
+#: backend/purepress-options.php:533
+msgid "Unit"
+msgstr "Jednostka"
+
+#: backend/purepress-options.php:559
+#, fuzzy
+msgid "Add new nutrition fact element"
+msgstr "Dodaj nowy składnik"
+
+#: backend/purepress-options.php:567
+#, fuzzy
+msgid "Add recipe template configuration"
+msgstr "Informacje o przepisie:"
+
+#: backend/purepress-shortcodes.php:217
+msgid "Top"
+msgstr "Góra"
+
+#: backend/purepress-shortcodes.php:232
+msgid " minutes"
+msgstr "minuty"
+
+#: backend/purepress-shortcodes.php:294
+msgid "By"
+msgstr "Przez"
+
+#: backend/purepress-shortcodes.php:316
+#: backend/purepress-shortcodes.php:462
+msgid "Prep Time:"
+msgstr "Czas przyg."
+
+#: backend/purepress-shortcodes.php:317
+#: backend/purepress-shortcodes.php:463
+msgid "Cook time:"
+msgstr "Czas gotowania:"
+
+#: backend/purepress-shortcodes.php:321
+#: backend/purepress-shortcodes.php:465
+msgid "Rating:"
+msgstr "Ocena:"
+
+#: backend/purepress-shortcodes.php:321
+msgid " stars - based on "
+msgstr "punktów - bazując na"
+
+#: backend/purepress-shortcodes.php:321
+msgid " reviews"
+msgstr "ocenach"
+
+#: backend/purepress-shortcodes.php:323
+#: backend/purepress-shortcodes.php:466
+#, fuzzy
+msgid "Allergens:"
+msgstr "Wszystkie alergeny"
+
+#: backend/purepress-shortcodes.php:329
+#: backend/purepress-shortcodes.php:472
+msgid "Nutrition facts:"
+msgstr "Informacje odżywcze"
+
+#: backend/purepress-shortcodes.php:334
+#, fuzzy
+msgid "Content"
+msgstr "Treść wpisu"
+
+#: backend/purepress-shortcodes.php:439
+msgid " By "
+msgstr "Przez"
+
+#: backend/purepress-shortcodes.php:461
+msgid "Total Time:"
+msgstr "Całkowity czas:"
+
+#: backend/purepress-shortcodes.php:465
+msgid "stars - based on"
+msgstr "punktów - bazując na"
+
+#: backend/purepress-shortcodes.php:465
+msgid "review(s)"
+msgstr "ocenach"
+
+#: backend/purepress-widgets.php:105
+msgid "Text"
+msgstr "Treść"
+
+#: backend/purepress-widgets.php:369
+#: backend/purepress-widgets.php:486
+msgid " No Comments."
+msgstr "Brak komentarze."
+
+#: backend/purepress-widgets.php:370
+#: backend/purepress-widgets.php:487
+msgid " 1 Comment "
+msgstr "1 komentarz"
+
+#: backend/purepress-widgets.php:371
+#: backend/purepress-widgets.php:488
+msgid " Comments (%)"
+msgstr "Komentarze (%)"
+
+#: backend/sidebars.php:43
+msgid "Sidebars manager"
+msgstr "Manadżer Pasków Bocznych"
+
+#: backend/sidebars.php:44
+msgid "Create and manage your sidebars, and then assign them to specific posts or pages"
+msgstr "Twórz i zarządzaj swoimi paskami bocznymi, by móc przypisywać je do określonych wpisów"
+
+#: backend/sidebars.php:62
+#: backend/sidebars.php:87
+msgid "Sidebar Name"
+msgstr "Nazwa Paska"
+
+#: backend/sidebars.php:66
+#: backend/sidebars.php:92
+msgid "Sidebar Description"
+msgstr "Opis Paska"
+
+#: backend/sidebars.php:71
+#: backend/sidebars.php:95
+msgid "Remove This Sidebar"
+msgstr "Usuń pasek"
+
+#: backend/sidebars.php:104
+#: backend/slider.php:288
+msgid "Save Changes"
+msgstr "Zapisz zmiany"
+
+#: backend/slider.php:70
+msgid "Front page slider manager"
+msgstr "Manadżer głownego slidera"
+
+#: backend/slider.php:71
+msgid "Here's special option panel for setting up your slider."
+msgstr "To specjalny panel opcji dla ustawień Twojego slidera"
+
+#: backend/slider.php:74
+msgid "Choose type of slider:"
+msgstr "Wybierz typ"
+
+#: backend/slider.php:83
+msgid "Automating slider"
+msgstr "Automatyczny"
+
+#: backend/slider.php:83
+msgid "Slider's elements are created from your posts"
+msgstr "Elementy slidera są tworzonę z wpisów"
+
+#: backend/slider.php:92
+#: backend/slider.php:213
+msgid "Manual slider"
+msgstr "Ręczny"
+
+#: backend/slider.php:92
+msgid "Slider's elements need to be created by you, but it gives more control"
+msgstr "Sam tworzysz własne slajdy"
+
+#: backend/slider.php:101
+msgid "Disable slider"
+msgstr "Wyłącz slider"
+
+#: backend/slider.php:101
+msgid "Slider's won't be shown on homepage"
+msgstr "Slider nie będzie się wyświetlał na głownej stronie"
+
+#: backend/slider.php:105
+#, fuzzy
+msgid "Slider script settings:"
+msgstr "Opis Paska"
+
+#: backend/slider.php:110
+#, fuzzy
+msgid "Slider script"
+msgstr "Opis Paska"
+
+#: backend/slider.php:123
+msgid "Show rating stars in slider (only automatic)?"
+msgstr "Pokaż gwiazdki w sliderze? (tylko w wersji automatycznej)"
+
+#: backend/slider.php:135
+msgid "Coda Slider autoslide status ?"
+msgstr "Automatyczna zmiana slajdów w CodaSlider?"
+
+#: backend/slider.php:146
+msgid "Coda Slider autoslide interval?"
+msgstr "Czas zmiany slajdów  w CodaSlider?"
+
+#: backend/slider.php:153
+msgid "Choose slider size:"
+msgstr "Wybierz rozmiar slidera"
+
+#: backend/slider.php:160
+msgid "Slider's height"
+msgstr "Wysokość slidera"
+
+#: backend/slider.php:161
+#, fuzzy
+msgid " <span>Slider cannot have dynamic height, so you need to decide on one size. Default height is <strong>460px</strong>, width is always <strong>770px</strong></span> for standard view"
+msgstr " <span>Slider nie może zmieniać dynamicznie swojej wysokości, więc musisz ustalić konkretny rozmiar. Domyślnie jest to <strong>375px</strong>, szerokość to zawsze <strong>905px</strong></span>"
+
+#: backend/slider.php:169
+msgid "Automatic slider"
+msgstr "Automatyczny slider"
+
+#: backend/slider.php:173
+msgid "Portfolio category"
+msgstr "Kategoria slidera"
+
+#: backend/slider.php:174
+msgid "Choose category you want to use as portfolio"
+msgstr "Wybierz kategorię którą chcesz wybrać jako główną do slidera"
+
+#: backend/slider.php:197
+msgid "How many slides you want to show?"
+msgstr "Ile slajdów chcesz pokazać?"
+
+#: backend/slider.php:198
+msgid "(Type only number from 2-30)"
+msgstr "(Wybierz między 2-30)"
+
+#: backend/slider.php:232
+#: backend/slider.php:264
+msgid "Source of image"
+msgstr "Źródło obrazka"
+
+#: backend/slider.php:232
+#: backend/slider.php:264
+msgid "(required)"
+msgstr "(wymagany)"
+
+#: backend/slider.php:237
+#: backend/slider.php:269
+msgid "Slide link (where user will go after clicking slide)"
+msgstr "Link slajdu"
+
+#: backend/slider.php:241
+#: backend/slider.php:273
+msgid "Slide title"
+msgstr "Tytuł slidera"
+
+#: backend/slider.php:245
+#: backend/slider.php:277
+#, fuzzy
+msgid "Slide subtitle"
+msgstr "Podtytuł"
+
+#: backend/slider.php:249
+#: backend/slider.php:281
+#, fuzzy
+msgid "Remove This Slide"
+msgstr "Usuń slajd"
+
+#: backend/ajax/loadgallery.php:10
+#: backend/ajax/loadphoto.php:10
+msgid "You are not allowed to be here"
+msgstr "Nie wolno Ci tu przebywać :)"
+
+#~ msgid "Find recipies with"
+#~ msgstr "Znajdź przepisy z"
+
+#~ msgid "Search Recipies"
+#~ msgstr "Szukaj przepisu"
+
+#, fuzzy
+#~ msgid "Choose slider script:"
+#~ msgstr "Wybierz rozmiar slidera"
+
+#~ msgid "Proudly powered by WordPress"
+#~ msgstr "Na silniku WordPress"
+
+#~ msgid "PurephotoBlog"
+#~ msgstr "CookingPress"
+
+#~ msgid "Ingridients"
+#~ msgstr "Składniki"
+
+#~ msgid "It has"
+#~ msgstr "Ma"
+
+#~ msgid "calories and"
+#~ msgstr "kalorii oraz"
+
+#~ msgid "gram of fat"
+#~ msgstr "gram tłuszczu"
+
+#~ msgid "Exclude categories from homepage"
+#~ msgstr "Wyklucz kategorie ze strony głównej"
+
+#, fuzzy
+#~ msgid ""
+#~ "Choose categories to exclude from website, usefull when you want to have "
+#~ "e.g seperate blog"
+#~ msgstr ""
+#~ "Wybierz kategorie do wykluczenia ze strony głównej, przydatne np do "
+#~ "osobnego bloga."
+
+#~ msgid "calories"
+#~ msgstr "kalorie"
+
+#~ msgid "grams fat"
+#~ msgstr "gram tłuszczu"
+
+#~ msgid "calories:"
+#~ msgstr "kalorie:"
+
+#~ msgid "fat"
+#~ msgstr "tłuszcz"
