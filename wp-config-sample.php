@@ -11,15 +11,19 @@
 
 
 /* MySQL settings */
-define( 'DB_NAME',     'database_name_here' );
-define( 'DB_USER',     'username_here' );
-define( 'DB_PASSWORD', 'password_here' );
+define('DB_NAME', 'wpdev');
+
+/** MySQL database username */
+define('DB_USER', 'root');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'q1p0w2o9');
 define( 'DB_HOST',     'localhost' );
 define( 'DB_CHARSET',  'utf8' );
 
 
 /* MySQL database table prefix. */
-$table_prefix = 'wp_';
+$table_prefix = 'testwp_';
 
 
 /* Authentication Unique Keys and Salts. */
@@ -44,6 +48,9 @@ define( 'EMPTY_TRASH_DAYS', '2' );
 /* Multisite. */
 define( 'WP_ALLOW_MULTISITE', false );
 
+/* Set wp-content dir location */
+define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content' );
+define( 'WP_CONTENT_URL', 'http://localhost/lericettedivali/wp-content' );
 
 /* WordPress debug mode for developers. */
 define( 'WP_DEBUG',         true );
