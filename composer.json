@@ -28,7 +28,7 @@
         "url":"http://wpackagist.org"
     }
   ],
-    "require": {
+  "require": {
         "php": ">=5.3.0",
         "wordpress": "3.9.1",
         "fancyguy/webroot-installer": "1.0.0",
@@ -36,11 +36,17 @@
         "wpackagist-plugin/ajax-thumbnail-rebuild": "*",
         "wpackagist-plugin/anti-spam": "*",
         "wpackagist-plugin/wordpress-importer": "*",
-        "wpackagist-plugin/jetpack": "*",
-        "wpackagist-theme/twentyfourteen": "*"
+        "wpackagist-plugin/jetpack": "*"
+  },
+  "require-dev": {
+        "wpackagist-plugin/debug-bar": "*",
+        "wpackagist-plugin/debug-bar-extender": "*"
     },
-    "extra": {
-    "webroot-dir": "wp",
-    "webroot-package": "wordpress"
+  "extra": {
+      "webroot-dir": "wp",
+      "webroot-package": "wordpress",
+      "installer-paths": {
+        "wp/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+      }
   }
 }
